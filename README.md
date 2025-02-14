@@ -1,5 +1,8 @@
 # 💻Projeto Integrador
 # LOJA DE DOCES🧁🍬🍭
+<img src="./assets/doce_encanto_logo_circular.png" width="300" />
+
+
 
 ## Sprint 1 - Apresentação do projeto + Layout 
 
