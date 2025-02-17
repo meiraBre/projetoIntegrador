@@ -12,6 +12,25 @@
         th { background: #ff6666; color: white; }
         button { margin-top: 10px; padding: 10px 15px; background: #ff6666; color: white; border: none; cursor: pointer; border-radius: 5px; }
         select { padding: 5px; margin-top: 10px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header, footer {
+            background-color: #ff4081;
+            color: white;
+            padding: 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        .banner {
+            width: 80%;
+            max-height: 400px;
+            object-fit: cover;
+        }
     </style>
     <script>
         const pedidos = [
@@ -66,6 +85,13 @@
     </script>
 </head>
 <body>
+    <header>
+        <h1>Delícias Doces</h1>
+    </header>
+    <main>
+        <img class="banner" src="/logo loja de doces 6xcf.png" alt="Imagem de doces">
+        <p>Os melhores doces para adoçar seu dia!</p>
+    </main>
     <div class="container">
         <h1>Rastreamento de Pedidos - Loja de Doces</h1>
         <label for="cliente-select">Filtrar por Cliente:</label>
@@ -82,5 +108,8 @@
             <tbody id="order-list"></tbody>
         </table>
     </div>
+    <footer>
+        <p>&copy; 2025 - Delícias Doces</p>
+    </footer>
 </body>
 </html>
