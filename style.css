@@ -1,0 +1,32 @@
+* {
+    margin: auto;
+    padding: 0;
+}
+body {
+    background-color: #ffcccb;
+}
+header {
+    background-color:  #ff4081;
+    height: 70px;
+}
+ header div .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    margin: 5px;
+    margin-top: 10px;
+}
+aside {
+    
+}
+footer {
+    background-color:  #ff4081;
+    height: 35px;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
