@@ -42,6 +42,11 @@ aside a {
     color: black;
     padding: 10px;
 }
+h2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 footer {
     background-color:  #ff4081;
