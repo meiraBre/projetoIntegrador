@@ -5,21 +5,44 @@
 body {
     background-color: #ffcccb;
 }
+main {
+    margin-left: 260px; /* Um pouco maior que a largura do aside */
+    padding: 20px;
+}
 header {
     background-color:  #ff4081;
     height: 70px;
 }
- header div .logo {
+header div .logo {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
     padding: 10px;
     margin: 5px;
-    margin-top: 10px;
 }
 aside {
-    
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0; 
+    top: 0; 
+    width: 250px; /* Ajuste conforme necessário */
+    height: 100vh; /* Ocupa a altura total da tela */
+    padding: 10px;
+    background-image: url('./assets/logo\ loja\ de\ doces\ 2.webp'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o aside */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
+    background-blend-mode: overlay; /* Mistura a cor com a imagem */
 }
+aside a {
+    display: block; /* Deixa os links organizados verticalmente */
+    text-decoration: none; /* Remove sublinhado */
+    color: black;
+    padding: 10px;
+}
+
 footer {
     background-color:  #ff4081;
     height: 35px;
