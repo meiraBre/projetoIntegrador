@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #ffcccb;
+    background-color: #f0d0d2;
 }
 main {
     margin-left: 260px; /* Um pouco maior que a largura do aside */
@@ -20,7 +20,7 @@ header div .logo {
     align-items: flex-end;
     padding: 10px;
     margin: 5px;
-}
+} 
 aside {
     display: flex;
     flex-direction: column;
@@ -46,7 +46,6 @@ aside h2 {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.7); 
 }
-
 aside ul {
     width: 100%;
     padding: 0;
@@ -59,16 +58,15 @@ aside ul {
 aside ul li {
     margin-bottom: 10px;
 }
-
 aside ul button {
     display: flex; 
     justify-content: center; /* Alinha horizontalmente */
     align-items: center; /* Alinha verticalmente */
     width: 150px;
     background-color: #ff4081;
-    color: white;
+    color: #d9afb5;
     padding: 2px;
-    margin: 10px;
+    margin: 40px;
     border: none;
     font-size: 16px;
     text-align: center;
@@ -76,27 +74,26 @@ aside ul button {
     border-radius: 4px;
     transition: background 0.3s;
 }
-
 aside ul button:hover {
     background-color: #d81b60;
 }
-
 aside ul li a {
     display: block;
     text-decoration: none;
     color: white;
     padding: 4px;
 }
-
 h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    color: #ff4081;
 }
 main h1 {
     color: white;
     text-align: center;
+    margin: 25px;
 }
 section {
     display: flex;
@@ -104,18 +101,29 @@ section {
     justify-content: center; /* Centraliza o conteúdo */
     gap: 10px; /* Espaço entre as colunas */
 }
-
 section div {
     display: flex;
     flex-direction: column; /* As imagens dentro de cada div ficam em coluna */
     align-items: center;
 }
-
 section div img {
     margin-bottom: 10px;
+    border-radius: 10px;
 }
-
-
+section div button {
+    padding: 10px 20px;
+    background-color: #a3aba9; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+section div button:hover {
+    background-color: #d81b60; /* Cor mais escura no hover */
+    transform: scale(1.05); /* Efeito de leve aumento */
+}
 footer {
     background-color:  #ff4081;
     height: 35px;
