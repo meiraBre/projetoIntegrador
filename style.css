@@ -1,6 +1,7 @@
 * {
     margin: auto;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-color: #ffcccb;
@@ -23,29 +24,75 @@ header div .logo {
 aside {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     position: fixed;
     left: 0; 
     top: 0; 
     width: 250px; /* Ajuste conforme necessário */
     height: 100vh; /* Ocupa a altura total da tela */
-    padding: 10px;
-    background-image: url('./assets/logo\ loja\ de\ doces\ 2.webp'); /* Substitua pelo caminho da sua imagem */
+    padding-top: 20px;
+    background-image: url('./assets/logo\ loja\ de\ doces\ 2.webp'); 
     background-size: cover; /* Faz a imagem cobrir todo o aside */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
     background-blend-mode: overlay; /* Mistura a cor com a imagem */
 }
-aside a {
-    display: block; /* Deixa os links organizados verticalmente */
-    text-decoration: none; /* Remove sublinhado */
-    color: black;
+aside h2 {
+    margin: 0;
     padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); 
 }
+
+aside ul {
+    width: 100%;
+    padding: 0;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column; /* Mantém os botões empilhados */
+    align-items: center;
+    list-style-type: none; 
+}
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul button {
+    display: flex; /* Usando flexbox para facilitar o alinhamento */
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center; /* Alinha verticalmente */
+    width: 150px;
+    background-color: #ff4081;
+    color: white;
+    padding: 2px;
+    margin: 10px;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+aside ul button:hover {
+    background-color: #d81b60;
+}
+
+aside ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+}
+
 h2 {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 footer {
