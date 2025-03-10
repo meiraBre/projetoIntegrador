@@ -61,7 +61,7 @@ aside ul li {
 }
 
 aside ul button {
-    display: flex; /* Usando flexbox para facilitar o alinhamento */
+    display: flex; 
     justify-content: center; /* Alinha horizontalmente */
     align-items: center; /* Alinha verticalmente */
     width: 150px;
@@ -94,6 +94,27 @@ h2 {
     align-items: center;
     margin-bottom: 20px;
 }
+main h1 {
+    color: white;
+    text-align: center;
+}
+section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo */
+    justify-content: center; /* Centraliza o conteúdo */
+    gap: 10px; /* Espaço entre as colunas */
+}
+
+section div {
+    display: flex;
+    flex-direction: column; /* As imagens dentro de cada div ficam em coluna */
+    align-items: center;
+}
+
+section div img {
+    margin-bottom: 10px;
+}
+
 
 footer {
     background-color:  #ff4081;
