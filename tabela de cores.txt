@@ -1,0 +1,9 @@
+📝Base de Cores para estilizar as páginas:
+CORES DA LOGO: 
+-  #f0d0d2
+-  #d9afb5
+- #a3aba9
+- #314048 
+
+COR DOS DETALHES (não confirmada):
+- #ff4081

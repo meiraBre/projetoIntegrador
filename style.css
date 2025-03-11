@@ -65,7 +65,7 @@ aside ul button {
     width: 150px;
     background-color: #ff4081;
     color: #d9afb5;
-    padding: 2px;
+    padding: 1px 2px;
     margin: 40px;
     border: none;
     font-size: 16px;
@@ -73,15 +73,19 @@ aside ul button {
     cursor: pointer;
     border-radius: 4px;
     transition: background 0.3s;
+    line-height: 25px;
 }
 aside ul button:hover {
     background-color: #d81b60;
 }
 aside ul li a {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     color: white;
     padding: 4px;
+    line-height: 25px;
 }
 h2 {
     display: flex;
@@ -110,6 +114,13 @@ section div img {
     margin-bottom: 10px;
     border-radius: 10px;
 }
+section div p {
+    margin: 6px;
+    color: white;
+    background-color:   #314048;
+    padding: 5px 130px;
+    border-radius: 2px;
+}
 section div button {
     padding: 10px 20px;
     background-color: #a3aba9; /* Cor de fundo do botão */
@@ -121,7 +132,7 @@ section div button {
     transition: background 0.3s ease, transform 0.2s ease;
 }
 section div button:hover {
-    background-color: #d81b60; /* Cor mais escura no hover */
+    background-color: #ff4081; /* Cor mais escura no hover */
     transform: scale(1.05); /* Efeito de leve aumento */
 }
 footer {
