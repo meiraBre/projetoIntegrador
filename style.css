@@ -67,7 +67,14 @@ aside ul {
     list-style-type: none; 
 }
 aside ul li {
-    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5px;
+}
+aside ul li a {
+    width: 100%;
+    text-decoration: none;
 }
 aside ul button {
     display: flex; 
@@ -76,15 +83,16 @@ aside ul button {
     width: 150px;
     background-color:  #314048 ;
     color: #d9afb5;
-    padding: 1px 2px;
+    padding: 1px;
     margin: 40px;
+    height: 40px;  /* Defina uma altura fixa */
     border: none;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
     border-radius: 4px;
     transition: background 0.3s;
-    line-height: 25px;
+    white-space: nowrap; /* Evita que o texto quebre para a linha de baixo */
 }
 aside ul button:hover {
     background-color: #ff4081;
