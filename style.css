@@ -11,7 +11,7 @@ main {
     padding: 20px;
 }
 header {
-    background-color:  #ff4081;
+    background-color:  #d9afb5 ;
     height: 70px;
 }
 header div .logo {
@@ -136,7 +136,7 @@ section div button:hover {
     transform: scale(1.05); /* Efeito de leve aumento */
 }
 footer {
-    background-color:  #ff4081;
+    background-color:  #d9afb5;
     height: 35px;
 }
 footer p {
