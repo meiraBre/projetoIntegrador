@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #f0d0d2;
+    background-color: #314048 ;
 }
 main {
     margin-left: 260px; /* Um pouco maior que a largura do aside */
@@ -13,6 +13,10 @@ main {
 header {
     background-color:  #d9afb5 ;
     height: 70px;
+}
+header, footer {
+    position: relative;
+    z-index: 2; /* Garante que fiquem acima do aside */
 }
 header div .logo {
     display: flex;
@@ -38,7 +42,9 @@ aside {
     background-repeat: no-repeat; /* Evita repetição da imagem */
     background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
     background-blend-mode: overlay; /* Mistura a cor com a imagem */
+    z-index: 1; /* Mantém o aside abaixo do header e do footer */
 }
+
 aside h2 {
     margin: 0;
     padding: 10px;
@@ -63,7 +69,7 @@ aside ul button {
     justify-content: center; /* Alinha horizontalmente */
     align-items: center; /* Alinha verticalmente */
     width: 150px;
-    background-color: #ff4081;
+    background-color:  #314048 ;
     color: #d9afb5;
     padding: 1px 2px;
     margin: 40px;
@@ -92,7 +98,7 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    color: #ff4081;
+    color:  #314048 ;
 }
 main h1 {
     color: white;
@@ -117,7 +123,7 @@ section div img {
 section div p {
     margin: 6px;
     color: white;
-    background-color:   #314048;
+    background-color:  #d9afb5;
     padding: 5px 130px;
     border-radius: 2px;
 }
