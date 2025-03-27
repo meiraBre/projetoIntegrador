@@ -2,121 +2,82 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
 }
 body {
     background-color: #314048 ;
 }
-main {
-    margin-left: 260px; /* Um pouco maior que a largura do aside */
-    padding: 20px;
-}
 header {
     display: flex; 
-    justify-content: flex-start; 
     align-items: center; 
+    justify-content: space-between; /* Distribui os elementos */
     background-color: #d9afb5;
     height: 70px;
     padding: 0 20px; 
 }
-header, footer {
-    position: relative;
-    z-index: 2; /* Garante que fiquem acima do aside */
-}
+/* Logo à esquerda */
 header .logo {
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
 }
-header .logo img {
-    max-height: 60px; 
-    width: auto; 
-}
-aside {
+/* Centraliza os itens da lista */
+header .lista {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    position: fixed;
-    left: 0; 
-    top: 0; 
-    width: 250px; /* Ajuste conforme necessário */
-    height: 100vh; /* Ocupa a altura total da tela */
-    padding-top: 20px;
-    background-image: url('./assets/logo\ loja\ de\ doces\ 2.webp'); 
-    background-size: cover; /* Faz a imagem cobrir todo o aside */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
-    background-blend-mode: overlay; /* Mistura a cor com a imagem */
-    z-index: 1; /* Mantém o aside abaixo do header e do footer */
+    flex-grow: 1; /* Faz a lista ocupar o máximo de espaço possível */
+    justify-content: center;
 }
-aside h2 {
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    background-color: #d9afb5;
-}
-aside ul {
-    width: 100%;
+header ul {
+    list-style: none;
+    display: flex;
     padding: 0;
-    margin: 20px 10px;
-    display: flex;
-    flex-direction: column; /* Mantém os botões empilhados */
-    align-items: center;
-    list-style-type: none; 
+    margin: 0;
+    font-size: 28px;
 }
-aside ul li {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2.5px;
-}
-aside ul li a {
-    width: 100%;
+header ul li {
     text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
 }
-aside ul button {
-    display: flex; 
-    justify-content: center; /* Alinha horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    width: 150px;
-    background-color:  #314048 ;
-    color: #d9afb5;
-    padding: 1px;
-    margin: 40px;
-    height: 40px;  /* Defina uma altura fixa */
-    border: none;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s;
-    white-space: nowrap; /* Evita que o texto quebre para a linha de baixo */
-}
-aside ul button:hover {
-    background-color: #ff4081;
-}
-aside ul li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+header ul li a {
     text-decoration: none;
     color: white;
-    padding: 4px;
-    line-height: 25px;
+    font-size: 24px;
+    background-color: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
-h2 {
+header ul li a:hover {
+    color: #314048 ; /* Cor mais escura no hover */
+    transform: scale(1.05); /* Efeito de leve aumento */
+}
+/* Ícones à direita */
+header .icones {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    color: #314048 ;
+    gap: 15px;
+    margin: 20px;
+}
+header, footer {
+    position: relative;
 }
 main h1 {
     color: white;
     text-align: center;
-    margin: 25px;
+    margin: 10px;
+}
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #d9afb5;
+    font-size: 20px;
+    margin: 10px;
 }
 section {
     display: flex;
@@ -128,6 +89,7 @@ section div {
     display: flex;
     flex-direction: column; /* As imagens dentro de cada div ficam em coluna */
     align-items: center;
+    text-align: center; /* Centraliza os textos */
 }
 section div img {
     margin-bottom: 10px;
@@ -137,26 +99,15 @@ section div p {
     margin: 6px;
     color: white;
     background-color:  #d9afb5;
-    padding: 5px 130px;
+    padding: 5px 20px;
+    text-align: center;
     border-radius: 2px;
-}
-section div button {
-    padding: 10px 20px;
-    background-color: #a3aba9; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-section div button:hover {
-    background-color: #ff4081; /* Cor mais escura no hover */
-    transform: scale(1.05); /* Efeito de leve aumento */
+    max-width: 300px;
 }
 footer {
     background-color:  #d9afb5;
     height: 35px;
+    margin-top: 20px;
 }
 footer p {
     display: flex;
