@@ -34,22 +34,24 @@ header ul {
     display: flex;
     padding: 0;
     margin: 0;
+    font-size: 28px;
 }
 header ul li {
     text-decoration: none;
     margin: 0 10px;
     color: white;
+    font-size: 24px;
+    padding: 10px 15px;
 }
 header ul li a {
     text-decoration: none;
     color: white;
+    font-size: 24px;
     background-color: none;
-    font-size: 50px;
-    padding: 100px;
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
 }
-header ul li a button:hover {
+header ul li a:hover {
     color: #314048 ; /* Cor mais escura no hover */
     transform: scale(1.05); /* Efeito de leve aumento */
 }
@@ -62,12 +64,20 @@ header .icones {
 }
 header, footer {
     position: relative;
-    z-index: 2; /* Garante que fiquem acima do aside */
 }
 main h1 {
     color: white;
     text-align: center;
-    margin: 25px;
+    margin: 10px;
+}
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #d9afb5;
+    font-size: 20px;
+    margin: 10px;
 }
 section {
     display: flex;
@@ -89,8 +99,10 @@ section div p {
     margin: 6px;
     color: white;
     background-color:  #d9afb5;
-    padding: 5px 130px;
+    padding: 5px 20px;
+    text-align: center;
     border-radius: 2px;
+    max-width: 300px;
 }
 footer {
     background-color:  #d9afb5;
