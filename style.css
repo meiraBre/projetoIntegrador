@@ -1,103 +1,83 @@
 * {
-    margin: auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
 }
 body {
-    background-color: #f0d0d2;
-}
-main {
-    margin-left: 260px; /* Um pouco maior que a largura do aside */
-    padding: 20px;
+    background-color: #314048 ;
 }
 header {
-    background-color:  #ff4081;
-    height: 70px;
-}
-header div .logo {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 10px;
-    margin: 5px;
-} 
-aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    position: fixed;
-    left: 0; 
-    top: 0; 
-    width: 250px; /* Ajuste conforme necessário */
-    height: 100vh; /* Ocupa a altura total da tela */
-    padding-top: 20px;
-    background-image: url('./assets/logo\ loja\ de\ doces\ 2.webp'); 
-    background-size: cover; /* Faz a imagem cobrir todo o aside */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-color: rgba(255, 255, 255, 0.5); /* Cor branca com 50% de opacidade */
-    background-blend-mode: overlay; /* Mistura a cor com a imagem */
-}
-aside h2 {
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.7); 
-}
-aside ul {
-    width: 100%;
-    padding: 0;
-    margin: 20px 10px;
-    display: flex;
-    flex-direction: column; /* Mantém os botões empilhados */
-    align-items: center;
-    list-style-type: none; 
-}
-aside ul li {
-    margin-bottom: 10px;
-}
-aside ul button {
     display: flex; 
-    justify-content: center; /* Alinha horizontalmente */
-    align-items: center; /* Alinha verticalmente */
-    width: 150px;
-    background-color: #ff4081;
-    color: #d9afb5;
-    padding: 1px 2px;
-    margin: 40px;
-    border: none;
-    font-size: 16px;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background 0.3s;
-    line-height: 25px;
+    align-items: center; 
+    justify-content: space-between; /* Distribui os elementos */
+    background-color: #d9afb5;
+    height: 70px;
+    padding: 0 20px; 
 }
-aside ul button:hover {
-    background-color: #d81b60;
-}
-aside ul li a {
+/* Logo à esquerda */
+header .logo {
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+/* Centraliza os itens da lista */
+header .lista {
+    display: flex;
+    flex-grow: 1; /* Faz a lista ocupar o máximo de espaço possível */
+    justify-content: center;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+}
+header ul li {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+}
+header ul li a {
     text-decoration: none;
     color: white;
-    padding: 4px;
-    line-height: 25px;
+    font-size: 24px;
+    background-color: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
-h2 {
+header ul li a:hover {
+    color: #314048 ; /* Cor mais escura no hover */
+    transform: scale(1.05); /* Efeito de leve aumento */
+}
+/* Ícones à direita */
+header .icones {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
-    color: #ff4081;
+    gap: 15px;
+    margin: 20px;
+}
+header, footer {
+    position: relative;
 }
 main h1 {
     color: white;
     text-align: center;
-    margin: 25px;
+    margin: 10px;
+}
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #d9afb5;
+    font-size: 20px;
+    margin: 10px;
 }
 section {
     display: flex;
@@ -109,6 +89,7 @@ section div {
     display: flex;
     flex-direction: column; /* As imagens dentro de cada div ficam em coluna */
     align-items: center;
+    text-align: center; /* Centraliza os textos */
 }
 section div img {
     margin-bottom: 10px;
@@ -117,31 +98,23 @@ section div img {
 section div p {
     margin: 6px;
     color: white;
-    background-color:   #314048;
-    padding: 5px 130px;
+    background-color:  #d9afb5;
+    padding: 5px 20px;
+    text-align: center;
     border-radius: 2px;
+    max-width: 300px;
 }
-section div button {
-    padding: 10px 20px;
-    background-color: #a3aba9; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
-}
-section div button:hover {
-    background-color: #ff4081; /* Cor mais escura no hover */
-    transform: scale(1.05); /* Efeito de leve aumento */
-}
-footer {
-    background-color:  #ff4081;
-    height: 35px;
-}
-footer p {
+.footer {
+    width: 100%;
+    height: 60px;
     display: flex;
+    align-items: flex-end;
     justify-content: center;
-    align-items: center;
-    padding: 5px;
+    position: relative;
+    background-color: #d9afb5; /* Cor rosa claro */
+}
+
+.copyrightText {
+    margin: 15px 0;
+    color: #fff;
 }
