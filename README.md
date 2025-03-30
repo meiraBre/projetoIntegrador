@@ -3,7 +3,7 @@
 ### Método: Desenvolvido utilizando a metodologia de entrega ágil em sprints.
 
 # 🏪 LOJA DE DOCES🧁🍬🍭
-<img src="./assets/doce_encanto_logo_circular.png" width="300" />
+<img src="./assets/img/doce_encanto_logo_circular.png" width="300" />
 
 
 

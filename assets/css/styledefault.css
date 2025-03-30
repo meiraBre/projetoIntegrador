@@ -7,9 +7,11 @@
     outline: none;
     color: inherit;
 }
+
 body {
     background-color: #314048 ;
 }
+
 header {
     display: flex; 
     align-items: center; 
@@ -18,17 +20,20 @@ header {
     height: 70px;
     padding: 0 20px; 
 }
+
 /* Logo à esquerda */
 header .logo {
     display: flex;
     align-items: center;
 }
+
 /* Centraliza os itens da lista */
 header .lista {
     display: flex;
     flex-grow: 1; /* Faz a lista ocupar o máximo de espaço possível */
     justify-content: center;
 }
+
 header ul {
     list-style: none;
     display: flex;
@@ -36,6 +41,7 @@ header ul {
     margin: 0;
     font-size: 28px;
 }
+
 header ul li {
     text-decoration: none;
     margin: 0 10px;
@@ -43,7 +49,8 @@ header ul li {
     font-size: 24px;
     padding: 10px 15px;
 }
-header ul li a {
+
+header ul li a button  {
     text-decoration: none;
     color: white;
     font-size: 24px;
@@ -51,63 +58,28 @@ header ul li a {
     cursor: pointer;
     transition: background 0.3s ease, transform 0.2s ease;
 }
-header ul li a:hover {
-    color: #314048 ; /* Cor mais escura no hover */
-    transform: scale(1.05); /* Efeito de leve aumento */
+
+header ul li a button:hover {
+    color: #314048 ;
+    transform: scale(1.05);
 }
-/* Ícones à direita */
+
 header .icones {
     display: flex;
     align-items: center;
     gap: 15px;
     margin: 20px;
 }
+
 header, footer {
     position: relative;
 }
-main h1 {
-    color: white;
-    text-align: center;
-    margin: 10px;
-}
-.slogan {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #d9afb5;
-    font-size: 20px;
-    margin: 10px;
-}
-section {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo */
-    justify-content: center; /* Centraliza o conteúdo */
-    gap: 10px; /* Espaço entre as colunas */
-}
-section div {
-    display: flex;
-    flex-direction: column; /* As imagens dentro de cada div ficam em coluna */
-    align-items: center;
-    text-align: center; /* Centraliza os textos */
-}
-section div img {
-    margin-bottom: 10px;
-    border-radius: 10px;
-}
-section div p {
-    margin: 6px;
-    color: white;
-    background-color:  #d9afb5;
-    padding: 5px 20px;
-    text-align: center;
-    border-radius: 2px;
-    max-width: 300px;
-}
+
 footer {
     background-color:  #d9afb5;
     height: 35px;
     margin-top: 20px;
+    color: black;
 }
 footer p {
     display: flex;
