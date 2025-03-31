@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+    color: inherit;
+}
+
+body {
+    background-color: #314048 ;
+}
+
+header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; /* Distribui os elementos */
+    background-color: #d9afb5;
+    height: 70px;
+    padding: 0 20px; 
+}
+
+/* Logo à esquerda */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Centraliza os itens da lista */
+header .lista {
+    display: flex;
+    flex-grow: 1; /* Faz a lista ocupar o máximo de espaço possível */
+    justify-content: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+}
+
+header ul li {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+}
+
+header ul li a button  {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    background-color: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+header ul li a button:hover {
+    color: #314048 ;
+    transform: scale(1.05);
+}
+
+header .icones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+header, footer {
+    position: relative;
+}
+
+footer {
+    background-color:  #d9afb5;
+    height: 35px;
+    margin-top: 20px;
+    color: black;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}

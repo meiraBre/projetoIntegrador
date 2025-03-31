@@ -1,0 +1,44 @@
+main h1 {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #d9afb5;
+    font-size: 20px;
+    margin: 10px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo */
+    justify-content: center; /* Centraliza o conteúdo */
+    gap: 10px; /* Espaço entre as colunas */
+}
+
+section div {
+    display: flex;
+    flex-direction: column; /* As imagens dentro de cada div ficam em coluna */
+    align-items: center;
+    text-align: center; /* Centraliza os textos */
+}
+
+section div img {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+section div p {
+    margin: 6px;
+    color: white;
+    background-color:  #d9afb5;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 2px;
+    max-width: 300px;
+}
