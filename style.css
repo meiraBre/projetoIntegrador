@@ -15,14 +15,14 @@ body {
 
     header {
         display: flex;
-        justify-content: space-between; /* Alinha os itens com espaçamento */
-        align-items: center; /* Alinha verticalmente */
+        justify-content: space-between; 
+        align-items: center; 
         padding: 15px 30px;
         background-color: #F0D0D3;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
     
-    /* Estilizando a logo */
+    
     .logo-header {
         display: flex;
         align-items: center;
@@ -35,20 +35,20 @@ body {
         border-radius: 50%;
     }
     
-    /* Estilizando o nome da loja */
+    
     .logo-header h1 {
-        margin: 0;  /* Remove margens externas */
-        padding: 0; /* Remove preenchimento extra */
+        margin: 0;  
+        padding: 0; 
         font-size: 24px;
         font-weight: bold;
         color: #333;
     }
     
-    /* Estilizando a NAV para deixar lado a lado */
+    
     nav ul {
         list-style: none;
         display: flex;
-        gap: 20px; /* Espaçamento entre os itens */
+        gap: 20px; 
     }
     
     nav ul li a {
@@ -58,7 +58,7 @@ body {
         font-weight: bold;
     }
     
-    /* Ícones */
+    
     .icons {
         display: flex;
         gap: 15px;
