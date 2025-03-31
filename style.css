@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #214F50;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+ footer {
+    background-color: #F0D0D3;
+    color:black rgb(0, 0, 0);
+    padding: 9px;
+    font-size: 1.2em;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between; /* Alinha os itens com espaçamento */
+        align-items: center; /* Alinha verticalmente */
+        padding: 15px 30px;
+        background-color: #F0D0D3;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Estilizando a logo */
+    .logo-header {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+    
+    .logo-header img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    
+    /* Estilizando o nome da loja */
+    .logo-header h1 {
+        margin: 0;  /* Remove margens externas */
+        padding: 0; /* Remove preenchimento extra */
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    /* Estilizando a NAV para deixar lado a lado */
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    /* Ícones */
+    .icons {
+        display: flex;
+        gap: 15px;
+    }
+    
+    .icons img {
+        width: 24px;
+        height: 24px;
+    }
+main {
+    padding: 20px;
+}
+
+.banner {
+    width: 80%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffcccb;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 1px solid #f0d0d2;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: #ff6666;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ffe0e0;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #ff6666;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #d32f2f;
+}
+
+select {
+    padding: 9px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #A3ABA9;
+    font-size: 1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner {
+    width: 100%;
+    max-width: 700px; 
+    height: auto;
+    max-height: 400px; 
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.banner:hover {
+    transform: scale(1.05); 
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        max-width: 90%; 
+    }
+}
+.container {
+    padding: 30px; 
+}
+
+th, td {
+    padding: 15px; 
+}
