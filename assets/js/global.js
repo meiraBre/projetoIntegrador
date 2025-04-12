@@ -14,10 +14,10 @@ class Header extends HTMLElement{
     </div>
     <div class="icones">
         <a href="Rastreamento.html">
-            <img src="./assets/img/icone carrinho.png" alt="Carrinho" width="25px">
+            <img src="./assets/img/icone-carrinho.png" alt="Carrinho" width="25px">
         </a>
         <a href="login.html">
-            <img src="./assets/img/icone usuário.png" alt="Usuário" width="25px">
+            <img src="./assets/img/icone-usuário.png" alt="Usuário" width="25px">
         </a>
     </div>
 </header>
