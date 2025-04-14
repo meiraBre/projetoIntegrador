@@ -6,7 +6,9 @@
     <link rel="icon" href="/assets/img/cupcake-bakery-svgrepo-com.svg" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/styledefault.css">
     <title>Rastreamento de Pedidos - Loja de Doces</title>
-    <link rel="stylesheet" href="/assets/css/Rastreamento.css">                                                                                                                                                                                                                                                                                                                                                                
+    <link rel="stylesheet" href="/assets/css/Rastreamento.css">
+    <script src="/assets/js/Rastreamento-carrinho.js"></script>
+    <script src="/assets/js/global.js"></script>                                                                                                                                                                                                                                                                                                                                                               
 
     <script>
         const pedidos = [
@@ -79,6 +81,7 @@
             </ul>
         </div>
         <div class="icones">
+            <a href="javascript:void(0);" onclick="exibirCarrinhoModal()">
             <a href="Rastreamento.html">
                 <img src="./assets/img/icone carrinho.png" alt="Carrinho" width="25px">
             </a>
@@ -109,6 +112,17 @@
             <tbody id="order-list"></tbody>
         </table>
     </div>
+    <div id="carrinho-modal" class="carrinho-modal" style="display: none;">
+        <div class="carrinho-conteudo">
+            <span class="fechar" onclick="fecharCarrinhoModal()">&times;</span>
+            <h2>Carrinho de Compras</h2>
+            <p id="carrinho-vazio">O carrinho está vazio.</p>
+            <ul id="carrinho-lista"></ul>
+            <p>Total: R$<span id="carrinho-total">0</span></p>
+            <button onclick="limparCarrinho()">Limpar Carrinho</button>
+        </div>
+    </div>
+    
     <footer>
         <p>&copy;2025 Doce Encanto. Todos os direitos reservados.</p>
     </footer>
