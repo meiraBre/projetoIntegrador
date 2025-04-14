@@ -8,33 +8,80 @@ body {
     background-color: #314048;
 }
 
-.header {
-    width: 100%;
-    height: 70px; /* Altura do header */
-    background-color: #d9afb5; /* Cor rosa claro */
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    position: fixed;
+header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; /* Distribui os elementos */
+    background-color: #d9afb5;
+    height: 70px;
+    padding: 0 20px; 
 }
 
-.logo-container { 
-    width: 85px; /* Ajustando o container para um tamanho mais próximo */
-    height: 60px;
-    border-radius: 50%;
+/* Logo à esquerda */
+header .logo {
     display: flex;
     align-items: center;
+}
+
+/* Centraliza os itens da lista */
+header .lista {
+    display: flex;
+    flex-grow: 1; /* Faz a lista ocupar o máximo de espaço possível */
     justify-content: center;
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
-.logo-container img {
-    width: 60px; /* Ajuste exato do tamanho da logo */
-    height: 60px;
-    border-radius: 50%; /* Mantém o logo arredondado */
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+}
+
+header ul li {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+}
+
+header ul li a button  {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    background-color: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+header ul li a button:hover {
+    color: #314048 ;
+    transform: scale(1.05);
+}
+
+header .icones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+header, footer {
+    position: relative;
+}
+
+footer {
+    background-color:  #d9afb5;
+    height: 35px;
+    margin-top: 20px;
+    color: black;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
 
 .login {

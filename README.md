@@ -19,4 +19,9 @@
 - Página de apresentação da loja: Desenvolvido por Leonardo
 
 ## 🎨 Sprint 3 - Estilização das páginas com CSS
+- Realização da estilização de cada página (Padrão de cores, elementos globais etc.)
+- Organização de todos os arquivos em pastas pertinentes ao desenvolvimento
+
+## ⚙️ Sprint 4 - Implementação de JS nas páginas
+  
 

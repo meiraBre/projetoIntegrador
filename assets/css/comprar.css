@@ -21,7 +21,7 @@ article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 550px;
+    width: 650px;
     background-color: #d9afb5;
     padding: 20px;
     border-radius: 10px;
@@ -33,37 +33,37 @@ article {
 
 article img {
     border-radius: 10px;
-    max-width: 100%;
+    max-width: 45%;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-    text-align: center;
-}
-
-section h2 {
+article h2 {
     font-size: 1.5em;
     color: #314048;
+    margin-top: 10px;
 }
 
-section h3 {
-    font-size: 1.5em;
+article h3 {
+    font-size: 1.1em;
     margin-bottom: 20px;
     color: #314048;
 }
 
-section p {
-    font-size: 1em;
-    width: 400px;
+article p {
+    font-size: 1.1em;
+    width: 500px;
+    height: 80px;
     line-height: 1;
     color: #222;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-section button {
+article .preco{
+    width: 100px;
+    height: 30px;
+    font-size: 1.2em;
+}
+
+article button {
     background-color: #314048;
     color: white;
     border: none;
@@ -77,3 +77,47 @@ section button {
 section button:hover {
     background-color: #222;
 }
+
+.carrossel-container{
+    position: relative;
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    margin: 10px 0px 20px 0px;
+    width: 400px;
+    height: 400px;
+}
+
+.carrossel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+#img {
+    object-fit: cover;
+}
+
+.carrossel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.3s ease;
+  }
+
+  .carrossel-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .carrossel-btn.esquerda {
+    left: 0;
+  }
+  
+  .carrossel-btn.direita {
+    right: 0;
+  }

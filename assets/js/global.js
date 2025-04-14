@@ -1,11 +1,26 @@
 class Header extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
-            <header class="header">
-                <div class="logo-container">
-                    <img src="assets/doce_encanto_logo_circular.png" alt="Logo">
-                </div>
-            </header>
+<header>
+    <div class="logo">
+        <img src="./assets/img/doce_encanto_logo_circular.png" alt="Logo da loja de doces" width="60px">
+    </div>
+    <div class="lista">
+        <ul>
+            <li><a href="./index.html"><button>Início</button></a></li>
+            <li><a href="./comprar.html"><button>Produtos</button></a></li>
+            <li><a href="./apresentaçao.html"><button>Sobre</button></a></li>
+        </ul>
+    </div>
+    <div class="icones">
+        <a href="Rastreamento.html">
+            <img src="./assets/img/icone-carrinho.png" alt="Carrinho" width="25px">
+        </a>
+        <a href="login.html">
+            <img src="./assets/img/icone-usuário.png" alt="Usuário" width="25px">
+        </a>
+    </div>
+</header>
         `
     }
 }
