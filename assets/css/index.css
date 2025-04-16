@@ -19,6 +19,7 @@ section {
     flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo */
     justify-content: center; /* Centraliza o conteúdo */
     gap: 10px; /* Espaço entre as colunas */
+    padding-bottom: 30px;
 }
 
 section div {
@@ -43,4 +44,53 @@ section div p {
     max-width: 300px;
 }
 
+/* Estilização do nome do produto: */
+.produto {
+    position: relative;
+    display: inline-block;
+}
+.produto img {
+    display: block;
+    width: 300px;
+    border-radius: 10px;
+}
+.nomeProduto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 8px 0;
+    background-color: rgba(217, 175, 181, 0.85);
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.produto:hover .nomeProduto {
+    opacity: 1;
+}
 
+/* Estilização dos icones de cada produto */
+.iconesProdutos {
+    position: absolute;
+    top: 10px;  /* Distância do topo da imagem */
+    right: 10px; /* Distância da borda direita da imagem */
+    display: flex;
+    flex-direction: column; /* Para empilhar os ícones verticalmente */
+    gap: 5px; /* Espaço entre os ícones */
+    z-index: 1; /* Garantir que os ícones fiquem acima da imagem */
+}
+
+.iconesProdutos img {
+    width: 30px;  /* Tamanho dos ícones */
+    cursor: pointer; /* Para parecer que são clicáveis */
+    transition: transform 0.3s ease;
+}
+
+.iconesProdutos img:hover {
+    transform: scale(1.1); /* Efeito de aumentar um pouco ao passar o mouse */
+}
