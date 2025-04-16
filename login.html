@@ -5,21 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./assets/css/cadastroelogin.css">
-    <link rel="stylesheet" href="/assets/css/styledefault.css">
     <link rel="icon" href="/assets/img/cupcake-bakery-svgrepo-com.svg" type="image/x-icon">
-    <script src="/assets/js/global.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/cadastroelogin.css">
+    <link rel="stylesheet" href="./assets/css/styledefault.css">
+    <script src="./assets/js/global.js" defer></script>
+    <script src="./assets/js/menu.js" defer></script>
+    <script src="./assets/js/validacaodelogin.js" defer></script>
 </head>
 
 <body>
     <main-header></main-header>
     <div class="login">
-        <form action="POST" class="formLogin">
+        <form action="#" method="post" class="formLogin" id="loginForm">
             <h1>Login</h1>
             <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <input type="email" id="email" placeholder="Digite seu e-mail" autofocus="true" />
             <label for="password">Senha</label>
-            <input type="password" placeholder="Digite sua senha" />
+            <input type="password" id="password" placeholder="Digite sua senha" />
             <a href="esquecisenha.html">Esqueci minha senha</a>
             <input type="submit" value="Entrar" class="btn" />
             <br>

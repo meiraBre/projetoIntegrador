@@ -4,26 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/cadastroelogin.css">
-    <link rel="stylesheet" href="/assets/css/styledefault.css">
+    <link rel="stylesheet" href="./assets/css/cadastroelogin.css">
+    <link rel="stylesheet" href="./assets/css/styledefault.css">
     <link rel="icon" href="/assets/img/cupcake-bakery-svgrepo-com.svg" type="image/x-icon">
     <title>Cadastrar-se</title>
-    <script src="assets/js/global.js" defer></script>
+    <script src="./assets/js/global.js" defer></script>
 </head>
 
 <body>
     <main-header></main-header>
     <div class="login">
-        <form action="POST" class="formLogin">
+        <form action="#" method="post" id="cadastroForm" class="formLogin">
             <h1>Cadastro</h1>
             <label for="nome">Nome</label>
-            <input type="text" name="nome" placeholder="Digite seu nome" required>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
             <label for="sobrenome">Sobrenome</label>
-            <input type="text" name="sobrenome" placeholder="Digite seu sobrenome" required>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
             <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+            <input type="email" id="email" placeholder="Digite seu e-mail" autofocus="true" />
             <label for="password">Senha</label>
-            <input type="password" placeholder="Digite sua senha" />
+            <input type="password" id="password" placeholder="Digite sua senha" />
             <input type="submit" value="Cadastrar" class="btn">
         </form>
     </div>
