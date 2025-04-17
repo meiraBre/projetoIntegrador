@@ -59,5 +59,31 @@ function atualizarResumo() {
     document.getElementById("subtotal").textContent = totalPreco.toFixed(2);
 }
 
+<script>
+  const btnFinalizar = document.getElementById('finalizar-compra');
+  const formPagamento = document.getElementById('form-pagamento');
+  const popupCompra = document.getElementById('popup-compra');
+  const btnConfirmar = document.getElementById('confirmar-pagamento');
+  const btnSalvar = document.getElementById('salvar-avaliacao');
+
+  // Mostrar o formulário de pagamento ao clicar no botão
+  btnFinalizar.addEventListener('click', () => {
+    formPagamento.style.display = 'block';
+  });
+
+  // Mostrar pop-up de compra finalizada
+  btnConfirmar.addEventListener('click', () => {
+    formPagamento.style.display = 'none';
+    popupCompra.style.display = 'block';
+  });
+
+  // Exibir avaliação no console (pode ser salvo no localStorage, se quiser)
+  btnSalvar.addEventListener('click', () => {
+    const texto = document.getElementById('avaliacao').value;
+    alert("Avaliação salva! Obrigado 😊");
+    console.log("Avaliação do cliente:", texto);
+  });
+</script>
+
   
   
