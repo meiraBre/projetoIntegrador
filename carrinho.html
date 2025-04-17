@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="./assets/css/styledefault.css">
+  <link rel="stylesheet" href="./assets/css/carrinhoUsuario.css"> 
+  <script src="./assets/js/carrinhoUsuario.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="./assets/img/doce_encanto_logo_circular.png" alt="Logo da loja de doces" width="60px">
+    </div>
+    <div class="lista">
+        <ul class="navMenu">
+            <li><a href="./index.html"><button>Início</button></a></li>
+            <li><a href="./comprar.html"><button>Produtos</button></a></li>
+            <li><a href="./apresentaçao.html"><button>Sobre</button></a></li>
+        </ul>
+    </div>
+    <div class="icones">
+        <a href="Rastreamento.html">
+            <img src="./assets/img/icone-carrinho.png" alt="Carrinho" width="25px">
+        </a>
+        <a href="login.html">
+            <img src="./assets/img/icone-usuário.png" alt="Usuário" width="25px">
+        </a>
+    </div>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</header>
+  <main>
+    <h1>Seu Carrinho:</h1>
+
+    <!-- Carrinho de Compras -->
+    <div id="carrinho-container">
+      <!-- Produtos no carrinho -->
+    </div>
+
+    <div id="resumo-compra">
+      <h3>Resumo da Compra</h3>
+      <div id="resumo-itens">
+        <p><strong>Total de Itens:</strong> <span id="total-itens">0</span></p>
+        <p><strong>Subtotal:</strong> R$ <span id="subtotal">0,00</span></p>
+      </div>
+
+      <div id="form-pagamento">
+        <h3>Escolha o método de pagamento</h3>
+        <label for="pagamento">Método:</label>
+        <select id="pagamento">
+          <option value="cartao">Cartão de Crédito</option>
+          <option value="boleto">Boleto Bancário</option>
+          <option value="pix">PIX</option>
+        </select>
+    </div> 
+  <!-- Botão para iniciar o processo -->
+  <button id="finalizar-compra">Finalizar compra</button>
+
+  <!-- Formulário de pagamento escondido por padrão -->
+  <div id="form-pagamento" style="display: none;">
+    <h3>Escolha a forma de pagamento:</h3>
+    <select id="pagamento-opcao">
+      <option value="pix">Pix</option>
+      <option value="cartao">Cartão de Crédito</option>
+      <option value="boleto">Boleto</option>
+    </select>
+  <button id="confirmar-pagamento">Confirmar</button>
+  </div>
+
+  <!-- Pop-up de compra finalizada escondido -->
+  <div id="popup-compra" style="display: none;">
+    <h3>Compra finalizada com sucesso!</h3>
+    <label for="avaliacao">Faça uma avaliação:</label><br>
+    <textarea id="avaliacao" rows="4" cols="40" placeholder="Digite sua opinião..."></textarea><br>
+  <button id="salvar-avaliacao">Salvar</button>
+  </div>
+  <button id="finalizar-compra">Finalizar Compra</button>
+  </div>
+  </main>
+</body>
+  <footer class="footer">
+    <p class="copyrightText">&copy; 2025 Doce Encanto. Todos os direitos reservados.</p>
+  </footer>
+</html>
+

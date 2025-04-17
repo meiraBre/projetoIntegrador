@@ -139,8 +139,7 @@ header {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: #d9afb5; /* Cor rosa claro */
-}
+    background-color: #d9afb5;
 
 .copyrightText {
     margin: 15px 0;
