@@ -15,29 +15,44 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Função para adicionar produto ao carrinho
-function adicionarProdutoAoCarrinho(nome, imagem, preco) {
-    const carrinhoContainer = document.getElementById("carrinho-container");
-    
-    const itemCarrinho = document.createElement("div");
-    itemCarrinho.classList.add("item-carrinho");
-  
-    itemCarrinho.innerHTML = `
-      <img src="${imagem}" alt="${nome}">
-      <div class="item-info">
-        <h4>${nome}</h4>
-        <p>Preço: R$ ${preco}</p>
-        <div class="item-quantidade">
-          <label for="quantidade">Quantidade:</label>
-          <input type="number" id="quantidade" value="1" min="1">
-        </div>
-      </div>
-      <button class="remover-item" onclick="removerItemCarrinho(this)">Remover</button>
-    `;
-  
-    carrinhoContainer.appendChild(itemCarrinho);
-  
-    atualizarResumo();
-}
+  document.addEventListener("DOMContentLoaded", function () {
+    const iconesComprar = document.querySelectorAll('.icone-comprar');
+
+    iconesComprar.forEach(icon => {
+      icon.addEventListener('click', function () {
+        const nome = icon.getAttribute('data-nome');
+        const imagem = icon.getAttribute('data-img');
+        const preco = 15.99; // Valor fixo para exemplo
+
+        salvarProdutoNoLocalStorage(nome, imagem, preco);
+
+        // Redirecionar para a página de compra
+        window.location.href = "carrinho.html";
+      });
+    });
+
+    function salvarProdutoNoLocalStorage(nome, imagem, preco) {
+      const novoProduto = {
+        nome: nome,
+        imagem: imagem,
+        preco: preco,
+        quantidade: 1
+      };
+
+      let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+      const produtoExistente = carrinho.find(prod => prod.nome === nome);
+
+      if (produtoExistente) {
+        produtoExistente.quantidade += 1;
+      } else {
+        carrinho.push(novoProduto);
+      }
+
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    }
+  });
+
 
 // Função para remover item do carrinho
 function removerItemCarrinho(button) {
