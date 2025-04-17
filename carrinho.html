@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho de Compras</title>
+  <link rel="stylesheet" href="./assets/css/styledefault.css">
+  <link rel="stylesheet" href="./assets/css/carrinhoUsuario.css"> 
+  <script src="./assets/js/carrinhoUsuario.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Seu Carrinho</h1>
+
+    <!-- Carrinho de Compras -->
+    <div id="carrinho-container">
+      <!-- Produtos no carrinho -->
+    </div>
+
+    <div id="resumo-compra">
+      <h3>Resumo da Compra</h3>
+      <div id="resumo-itens">
+        <p><strong>Total de Itens:</strong> <span id="total-itens">0</span></p>
+        <p><strong>Subtotal:</strong> R$ <span id="subtotal">0,00</span></p>
+      </div>
+
+      <div id="form-pagamento">
+        <h3>Escolha o método de pagamento</h3>
+        <label for="pagamento">Método:</label>
+        <select id="pagamento">
+          <option value="cartao">Cartão de Crédito</option>
+          <option value="boleto">Boleto Bancário</option>
+          <option value="pix">PIX</option>
+        </select>
+      </div>
+
+      <button id="finalizar-compra">Finalizar Compra</button>
+    </div>
+  </main>
+</body>
+</html>
+
