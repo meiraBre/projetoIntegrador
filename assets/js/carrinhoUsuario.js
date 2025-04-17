@@ -58,8 +58,6 @@ function atualizarResumo() {
     document.getElementById("total-itens").textContent = totalItens;
     document.getElementById("subtotal").textContent = totalPreco.toFixed(2);
 }
-
-<script>
   const btnFinalizar = document.getElementById('finalizar-compra');
   const formPagamento = document.getElementById('form-pagamento');
   const popupCompra = document.getElementById('popup-compra');
@@ -83,7 +81,7 @@ function atualizarResumo() {
     alert("Avaliação salva! Obrigado 😊");
     console.log("Avaliação do cliente:", texto);
   });
-</script>
+
 
   
   
