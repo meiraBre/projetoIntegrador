@@ -1,125 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doce Encanto - Nossa História</title>
-    <meta name="description" content="Conheça a história da Doce Encanto, sua loja de doces gourmet com uma pitada de modernidade desde 1999.">
-    <link rel="stylesheet" href="./assets/css/apresentaçao.css"> <!-- Added proper CSS link -->
-    <script src="/assets/js/global.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doce Encanto - Sobre Nós</title>
+  <link rel="stylesheet" href="./assets/css/apresentaçao.css"> <!-- Added proper CSS link -->
+  <!-- Adicione o Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="/assets/js/global.js" defer></script>
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-content">
-            <h1 aria-label="Doce Encanto">Doce Encanto</h1>
-            <p class="tagline">Sua loja de doces com uma pitada de modernidade!</p>
-        </div>
-        
-        <nav aria-label="Navegação principal">
-            <ul class="nav-menu">
-                <li><a href="login.html">login</a></li>
-                <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="apresentaçao.html">História da loja</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main class="container">
-        <article>
-            <header class="page-header">
-                <h2>Nossa História</h2>
-                <p class="subtitle">Doce tradição desde 1999</p>
-            </header>
-            
-            <section class="history-section">
-                <p>
-                    A <span class="highlight">Doce Encanto</span> nasceu em 1999, em meio a uma era de transformações digitais e novas tendências gastronômicas. Fundada por um grupo de amigos apaixonados por doces, <span class="highlight">Brenda</span>, <span class="highlight">Alice</span>, <span class="highlight">Leonardo</span>, <span class="highlight">Kaue</span> e <span class="highlight">Elton</span>, a loja surgiu com o objetivo de reinventar os sabores tradicionais, trazendo inovação e sofisticação para o mundo dos doces.
-                </p>
-                
-                <figure class="founders-photo">
-                    <img src="./assets/img/logo-lojaDoce.webp" alt="Logo Loja" loading="lazy">
-                    <figcaption>Logo da loja Doce Encanto</figcaption>
-                </figure>
-            </section>
+  <header>
+    <div class="logo">
+        <img src="./assets/img/doce_encanto_logo_circular.png" alt="Logo da Doce Encanto" class="logo-img">
+      </div>
+      
+    <nav class="lista">
+      <ul>
+        <li><a href="./index.html"><button>Início</button></a></li>
+        <li><a href="./comprar.html"><button>Produtos</button></a></li>
+        <li><a href="./apresentaçao.html"><button>Sobre</button></a></li>
 
-            <section class="philosophy-section">
-                <h3>Nossa Filosofia</h3>
-                <p>
-                    Com uma abordagem moderna, a Doce Encanto combina técnicas artesanais com ingredientes de alta qualidade, criando produtos que encantam tanto pelo sabor quanto pela apresentação. Nossos doces são feitos com muito carinho e atenção aos detalhes, garantindo uma experiência única para nossos clientes.
-                </p>
-            </section>
+      </ul>
+    </nav>
+    <div class="icones">
+      <!-- Ícones do Font Awesome em branco -->
+      <i class="fas fa-shopping-cart" style="color: white;"></i>
+      <i class="fas fa-user" style="color: white;"></i>
+    </div>
+  </header>
 
-            <div class="image-grid" aria-label="Galeria de produtos">
-                <figure>
-                    <img src="./assets/img/brownie.png" alt="Logo da loja Doce Encanto" loading="lazy">
-                    <figcaption>Nosso logo representa doçura e elegância</figcaption>
-                </figure>
-                <figure>
-                    <img src="./assets/img/cone-trufado.jpeg" alt="Delicioso bolo de pote com cobertura cremosa" loading="lazy">
-                    <figcaption>Cone Trufado</figcaption>
-                </figure>
-                <figure>
-                    <img src="./assets/img/brigadeiro.webp" alt="Brigadeiro gourmet com granulado belga" loading="lazy">
-                    <figcaption>Brigadeiros gourmet</figcaption>
-                </figure>
-            </div>
+  <main class="main-section">
+    <h1>Bem-vindo à Doce Encanto</h1>
+    <p>Uma loja feita por quem vive de Gostosuras e Travessuras. Desde o começo, nossa missão foi oferecer produtos modernos, acessíveis e cheios de personalidade. E aqui estamos nós!</p>
+    <a href="#"><button class="btn">Conheça nossos produtos</button></a>
+  </main>
 
-            <section class="sustainability-section">
-                <h3>Compromisso com o Meio Ambiente</h3>
-                <p>
-                    Além disso, a Doce Encanto se preocupa com o meio ambiente e a sustentabilidade. Utilizamos embalagens ecológicas e apoiamos produtores locais, contribuindo para um mundo mais consciente e responsável.
-                </p>
-            </section>
+  <section class="carrossel-container">
+    <div class="carrossel">
+      <div class="card-produto">
+        <img src="./assets/img/alfajor.webp" alt="Produto 1">
+        <h3>Alfajor</h3>
+        <p>R$ 99,90</p>
+      </div>
+      <div class="card-produto">
+        <img src="./assets/img/bolo-de-fubá.webp" alt="Produto 2">
+        <h3>Bolo de Fubá</h3>
+        <p>R$ 249,00</p>
+      </div>
+      <div class="card-produto">
+        <img src="./assets/img/Brigadeiro.webp" alt="Produto 3">
+        <h3>Brigadeiro</h3>
+        <p>R$ 179,90</p>
+      </div>
+      <div class="card-produto">
+        <img src="./assets/img/cone-trufado.jpeg" alt="Produto 4">
+        <h3>Cone Trufado</h3>
+        <p>R$ 199,00</p>
+      </div>
+      <!-- duplicados para efeito infinito -->
+      <div class="card-produto">
+        <img src="./assets/img/torta-maracuja.webp" alt="Produto 5">
+        <h3>Torta de Maracuja</h3>
+        <p>R$ 99,90</p>
+      </div>
+      <div class="card-produto">
+        <img src="./assets/img/donnuts.jpeg" alt="Produto 6">
+        <h3>Donnuts</h3>
+        <p>R$ 249,00</p>
+      </div>
+    </div>
+  </section>
 
-            <section class="today-section">
-                <h3>Doce Encanto Hoje</h3>
-                <p>
-                    Hoje, a Doce Encanto é referência em doces gourmet, atendendo clientes de todo o país através de nossa loja online e física. Venha nos visitar e descubra um mundo de sabores que vai surpreender o seu paladar!
-                </p>
-                
-                <div class="cta">
-                    <a href="Rastreamento.html" class="btn">Rastreamento</a>
-                    <a href="Contatos.html" class="btn secondary">Contatos</a>
-                </div>
-            </section>
-        </article>
-    </main>
+  <section class="main-section" style="background-color: #263339;">
+    <h2>Nossa História</h2>
+    <p>
+      Tudo começou em uma cozinha pequena, com cheiro de chocolate no ar e o som das risadas da família ao fundo. Em 2018, um grupo de amigos, decidiu transformar o seus talentos em um sonho real: levar alegria em forma de doce para todo mundo.
+    </p>
+    <p>
+      A primeira fornada de brigadeiros foi vendida em potinhos reciclados na vizinhança, e o sucesso foi instantâneo. De boca em boca (literalmente), a fama cresceu e logo surgiram encomendas para festas, eventos e empresas.
+    </p>
+    <p>
+      Hoje, a Doce Eencanto é uma doceria online que entrega delícias artesanais para todo o Brasil. Cada doce é feito com carinho, ingredientes selecionados e aquele toque caseiro que só o grupo de amigos sabem dar.
+    </p>
+    <p>
+      Nosso objetivo? Adoçar o seu dia com qualidade, amor e muita, muita calda de chocolate.
+    </p>
+  </section>  
 
-    <footer class="main-footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Doce Encanto</h4>
-                <address>
-                    Rua dos Sabores, 123<br>
-                    Bairro Doce<br>
-                    São Paulo - SP<br>
-                    CEP: 01234-567
-                </address>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Horário de Funcionamento</h4>
-                <p>
-                    Segunda a Sexta: 9h às 19h<br>
-                    Sábados: 10h às 16h<br>
-                    Domingos e Feriados: Fechado
-                </p>
-            </div>
-            
-            <div class="footer-section">
-                <h4>Redes Sociais</h4>
-                <ul class="social-links">
-                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
-                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
-                    <li><a href="#" aria-label="WhatsApp">WhatsApp</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="copyright">
-            <p>&copy; 2025 Doce Encanto. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+  <footer class="footer">
+    <p class="copyrightText">&copy; 2025 Doce encanto. Todos os direitos reservados.</p>
+  </footer>
+
 </body>
 </html>
