@@ -1,0 +1,191 @@
+*   [33me8c53fd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mleonardo[m[33m, [m[1;31morigin/leonardo[m[33m)[m Merge branch 'main' of https://github.com/meiraBre/projetoIntegrador into leonardo
+[31m|[m[32m\[m  
+[31m|[m * [33m3d6f958[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update README.md
+[31m|[m * [33m1ae3fce[m Update README.md
+* [32m|[m [33m4f0451c[m alteração feitas no valor dos produtos
+* [32m|[m [33mb4ecf22[m Atualizando apresentaçao.html e apresetacao.css para melhorar a estrutura e acessibilidade do site
+[32m|[m [32m|[m *   [33m3d0b9ae[m[33m ([m[1;31morigin/Bre[m[33m)[m Atualizando
+[32m|[m [32m|[m [33m|[m[32m\[m  
+[32m|[m [32m|[m [33m|[m[32m/[m  
+[32m|[m [32m|[m[32m/[m[33m|[m   
+[32m|[m * [33m|[m   [33m9df4d1e[m Merge pull request #24 from meiraBre/Bre
+[32m|[m [35m|[m[36m\[m [33m\[m  
+[32m|[m * [36m|[m [33m|[m [33m27583bd[m Update README.md
+[32m|[m * [36m|[m [33m|[m [33mbe5cae0[m atualizações ok
+[32m|[m * [36m|[m [33m|[m   [33md084ddb[m Merge pull request #23 from meiraBre/Bre
+[32m|[m [1;31m|[m[1;32m\[m [36m\[m [33m\[m  
+[32m|[m * [1;32m\[m [36m\[m [33m\[m   [33ma9dac21[m Merge pull request #22 from meiraBre/Bre
+[32m|[m [1;33m|[m[1;34m\[m [1;32m\[m [36m\[m [33m\[m  
+[32m|[m * [1;34m\[m [1;32m\[m [36m\[m [33m\[m   [33m60c414d[m Merge branch 'main' of https://github.com/meiraBre/projetoIntegrador
+[32m|[m [1;35m|[m[1;36m\[m [1;34m\[m [1;32m\[m [36m\[m [33m\[m  
+[32m|[m [1;35m|[m * [1;34m\[m [1;32m\[m [36m\[m [33m\[m   [33md0690be[m Merge pull request #21 from meiraBre/Bre
+[32m|[m [1;35m|[m [31m|[m[32m\[m [1;34m\[m [1;32m\[m [36m\[m [33m\[m  
+[32m|[m * [31m|[m [32m|[m [1;34m|[m [1;32m|[m [36m|[m [33m|[m [33m175f917[m consertando o header
+[32m|[m [31m|[m[31m/[m [32m/[m [1;34m/[m [1;32m/[m [36m/[m [33m/[m  
+[32m|[m [31m|[m [32m|[m [1;34m|[m [1;32m|[m [36m|[m * [33mce37626[m Atualização barra de pesquisa
+[32m|[m [31m|[m [32m|[m [1;34m|[m [1;32m|[m [36m|[m[36m/[m  
+[32m|[m [31m|[m [32m|[m [1;34m|[m [1;32m|[m * [33m6957c7e[m Adicionando barra de pesquisa
+[32m|[m [31m|[m [32m|[m [1;34m|[m [1;32m|[m * [33mea773ae[m Exclusão das páginas de carrinho para criar um modal
+[32m|[m [31m|[m [32m|[m [1;34m|[m [1;32m|[m[1;32m/[m  
+[32m|[m [31m|[m [32m|[m [1;34m|[m * [33m4a232ce[m Página em construção
+[32m|[m [31m|[m [32m|[m [1;34m|[m[1;34m/[m  
+[32m|[m [31m|[m [32m|[m * [33m484871f[m Estilização e adição de JS na página de carrinho
+[32m|[m [31m|[m [32m|[m * [33mc066361[m Atualização
+[32m|[m [31m|[m [32m|[m * [33m463aa4b[m Adicionando itens na página de compra
+[32m|[m [31m|[m [32m|[m * [33m1e5f5ce[m Página de compra sendo incorporada
+[32m|[m [31m|[m [32m|[m[32m/[m  
+[32m|[m [31m|[m * [33mc745a3f[m Atualização da página principal, icones de favoritar e adicionar nas imagens e hoover no nome do produto
+[32m|[m [31m|[m[31m/[m  
+[32m|[m *   [33m5e9a7ed[m Merge branch 'main' of https://github.com/meiraBre/projetoIntegrador
+[32m|[m [33m|[m[32m\[m  
+[32m|[m [33m|[m[32m/[m  
+[32m|[m[32m/[m[33m|[m   
+* [33m|[m [33m83aa7bc[m tudo ok
+[34m|[m * [33m410d5a7[m criação do menu hamburguer
+[34m|[m[34m/[m  
+* [33mf634aff[m Atualizando Rastreamento.html com melhorias locais
+* [33m2565cbd[m Atualizando Rastreamento.html com as mudanças realizadas
+*   [33m7d84cef[m adicionando Carrinho.js e fazendo o merging no Ratreamento.html e no Rastreamento.css
+[35m|[m[36m\[m  
+[35m|[m *   [33m0cb8a20[m Merge pull request #20 from meiraBre/feature/projetoItegrador-pagina-de-comprar
+[35m|[m [1;31m|[m[1;32m\[m  
+[35m|[m [1;31m|[m *   [33ma029437[m[33m ([m[1;31morigin/feature/projetoItegrador-pagina-de-comprar[m[33m)[m Merge branch 'main' of https://github.com/meiraBre/projetoIntegrador into feature/projetoItegrador-pagina-de-comprar
+[35m|[m [1;31m|[m [1;33m|[m[1;31m\[m  
+[35m|[m [1;31m|[m [1;33m|[m[1;31m/[m  
+[35m|[m [1;31m|[m[1;31m/[m[1;33m|[m   
+[35m|[m * [1;33m|[m   [33m8c4507c[m Merge pull request #19 from meiraBre/feature/projetoItegrador-pagina-de-comprar
+[35m|[m [1;35m|[m[1;36m\[m [1;33m\[m  
+[35m|[m [1;35m|[m [1;36m|[m * [33mff4ec99[m feat: criar carrossel de produtos para pagina de compras
+[35m|[m [1;35m|[m [1;36m|[m[1;36m/[m  
+[35m|[m [1;35m|[m * [33mca5ad6d[m chore: arquivos HTML e JS corrigido para kebab-case
+[35m|[m [1;35m|[m * [33m3851c3f[m chore: renomeia imagens para formato kebab-case sem espaços
+[35m|[m [1;35m|[m[1;35m/[m  
+[35m|[m * [33m6a6332a[m Update README.md
+[35m|[m *   [33m83f0ae3[m Merge pull request #18 from meiraBre/alicia2
+[35m|[m [31m|[m[32m\[m  
+[35m|[m [31m|[m * [33mc68c075[m[33m ([m[1;31morigin/alicia2[m[33m)[m Atualização das páginas de login e cadastro
+[35m|[m [31m|[m[31m/[m  
+[35m|[m * [33m805ddbd[m Update README.md
+* [32m|[m [33m12fb704[m Carrinho.js
+* [32m|[m [33m4e306cd[m adicionando arquivo (Rastreamento-carrinho.js)
+* [32m|[m [33m3a3bca1[m tudo pronto
+[32m|[m[32m/[m  
+*   [33me25b3f2[m quase la
+[33m|[m[34m\[m  
+[33m|[m *   [33m0502d32[m Merge pull request #17 from meiraBre/leonardo
+[33m|[m [35m|[m[36m\[m  
+[33m|[m [35m|[m * [33mf957c6e[m Atualiza apresentação e adiciona CSS
+[33m|[m [35m|[m[35m/[m  
+* [35m|[m [33m389b8cb[m tudo ok
+* [35m|[m [33m6f08a9b[m tudo pronto
+[35m|[m[35m/[m  
+* [33m6862ab6[m[33m ([m[1;32mmain[m[33m)[m Movendo Rastreamento.css para assets/css/
+* [33m8115cc9[m Renomeando atyle.css para Rastreamento.css
+* [33m7ae71d5[m indice renomeado
+* [33md9b4caf[m Corrigindo nome da pasta
+*   [33m6bb44f5[m Mesclando históricos não relacionados
+[1;31m|[m[1;32m\[m  
+[1;31m|[m * [33m501b883[m Update Rastreamento.html
+[1;31m|[m *   [33mc00937e[m Merge pull request #15 from meiraBre/feature/projetoItegrador-pagina-de-comprar
+[1;31m|[m [1;33m|[m[1;34m\[m  
+[1;31m|[m [1;33m|[m * [33m6e0142a[m feat: implementa nova estilização para a página comprar
+[1;31m|[m [1;33m|[m[1;33m/[m  
+[1;31m|[m * [33ma10c890[m docs: adiciona pasta 'docs' para armazenar documentos do projeto
+[1;31m|[m * [33mca0b845[m refactor: reorganiza estrutura do projeto (pastas, CSS e caminhos)
+[1;31m|[m *   [33m2ca0e6d[m Merge pull request #13 from meiraBre/brenda
+[1;31m|[m [1;35m|[m[1;36m\[m  
+[1;31m|[m [1;35m|[m * [33m81c1ebe[m[33m ([m[1;31morigin/brenda[m[33m)[m Index atualizado
+[1;31m|[m [1;35m|[m * [33m2536fa4[m Atualização página index
+[1;31m|[m * [1;36m|[m [33mb25b2e1[m Merge pull request #12 from meiraBre/brenda
+[1;31m|[m [31m|[m[1;36m\[m[1;36m|[m 
+[1;31m|[m [31m|[m * [33m3dc5c1c[m Estilização dos botões do aside
+[1;31m|[m [31m|[m * [33m7246b44[m Logo centralizada
+[1;31m|[m * [32m|[m [33me7ca17c[m Merge pull request #11 from meiraBre/brenda
+[1;31m|[m [33m|[m[32m\[m[32m|[m 
+[1;31m|[m [33m|[m * [33m6e3cdc3[m Estilização da página principal
+[1;31m|[m [33m|[m * [33m7c50466[m Atualização das cores da página index.html
+[1;31m|[m [33m|[m *   [33mca179f2[m Alterações da main para o repositório local
+[1;31m|[m [33m|[m [35m|[m[33m\[m  
+[1;31m|[m [33m|[m [35m|[m[33m/[m  
+[1;31m|[m [33m|[m[33m/[m[35m|[m   
+[1;31m|[m [33m|[m * [33m92d9791[m Atualização
+* [33m|[m [36m|[m [33m18bd67b[m Atualizando rastreamento e adicionando CSS
+* [33m|[m [36m|[m [33m4a7d483[m first commit
+ [33m/[m [36m/[m  
+[33m|[m [36m|[m * [33m1a5c08b[m[33m ([m[1;31morigin/alicia[m[33m)[m atualização das páginas de login e cadastro
+[33m|[m [36m|[m[33m/[m  
+[33m|[m[33m/[m[36m|[m   
+* [36m|[m [33mc8df829[m Página de Login e Cadastro estilizada
+* [36m|[m [33m5002b37[m Merge pull request #10 from meiraBre/brenda
+[1;32m|[m[36m\[m[36m|[m 
+[1;32m|[m * [33m407546d[m Estilização dos botões do aside
+* [1;33m|[m [33mbf037fd[m Merge pull request #9 from meiraBre/brenda
+[1;34m|[m[1;33m\[m[1;33m|[m 
+[1;34m|[m * [33m421a147[m Estilização, criação de um arquivo para as cores do projeto, adaptação de algumas caracteristicas
+[1;34m|[m * [33md3b9165[m Estilização do corpo principal e adição de mais um docê
+[1;34m|[m * [33m61350f8[m Aside estilizado com CSS
+[1;34m|[m * [33mc6125e2[m Atualização CSS
+[1;34m|[m * [33mdbdc6ef[m Atualização do código CSS
+* [1;35m|[m [33m6d52499[m Merge pull request #8 from meiraBre/brenda
+[1;36m|[m[1;35m\[m[1;35m|[m 
+[1;36m|[m * [33m7a2b46b[m Arquivo CSS adicionado
+[1;36m|[m * [33md4890f8[m Correção do arquivo, logo na pasta assets
+[1;36m|[m *   [33mfaafb6c[m Merge da branch main
+[1;36m|[m [32m|[m[1;36m\[m  
+[1;36m|[m [32m|[m[1;36m/[m  
+[1;36m|[m[1;36m/[m[32m|[m   
+* [32m|[m   [33m1723c36[m Merge pull request #7 from meiraBre/brenda
+[34m|[m[35m\[m [32m\[m  
+* [35m\[m [32m\[m   [33m503aed7[m Merge pull request #6 from meiraBre/brenda
+[36m|[m[1;31m\[m [35m\[m [32m\[m  
+* [1;31m|[m [35m|[m [32m|[m [33m582ee2c[m Update README.md
+* [1;31m|[m [35m|[m [32m|[m   [33m4452fe2[m Merge pull request #5 from meiraBre/leonardo
+[1;32m|[m[1;33m\[m [1;31m\[m [35m\[m [32m\[m  
+[1;32m|[m * [1;31m|[m [35m|[m [32m|[m [33mb9eb30c[m criando pagina de apresentação
+* [1;33m|[m [1;31m|[m [35m|[m [32m|[m [33m2423e78[m confirmar
+* [1;33m|[m [1;31m|[m [35m|[m [32m|[m [33mf262ca0[m Delete Apresentação Loja directory
+[1;33m|[m[1;33m/[m [1;31m/[m [35m/[m [32m/[m  
+* [1;31m|[m [35m|[m [32m|[m   [33med2bbe9[m Merge pull request #4 from meiraBre/feature/projetoItegrador-pagina-de-comprar
+[1;34m|[m[1;35m\[m [1;31m\[m [35m\[m [32m\[m  
+[1;34m|[m * [1;31m|[m [35m|[m [32m|[m [33m37aef64[m feat: adicionar pagina de compras
+[1;34m|[m[1;34m/[m [1;31m/[m [35m/[m [32m/[m  
+* [1;31m|[m [35m|[m [32m|[m   [33mb86031d[m Merge pull request #3 from meiraBre/brenda
+[1;36m|[m[31m\[m [1;31m\[m [35m\[m [32m\[m  
+* [31m|[m [1;31m|[m [35m|[m [32m|[m [33m80dddbe[m Add files via upload
+* [31m|[m [1;31m|[m [35m|[m [32m|[m   [33mf13a7c7[m Merge pull request #2 from meiraBre/brenda
+[32m|[m[33m\[m [31m\[m [1;31m\[m [35m\[m [32m\[m  
+* [33m|[m [31m|[m [1;31m|[m [35m|[m [32m|[m [33mcc1d436[m Update README.md
+* [33m|[m [31m|[m [1;31m|[m [35m|[m [32m|[m   [33m9ebad31[m Merge pull request #1 from meiraBre/brenda
+[34m|[m[35m\[m [33m\[m [31m\[m [1;31m\[m [35m\[m [32m\[m  
+[34m|[m [35m|[m [33m|[m [31m|[m [1;31m|[m [35m|[m * [33m8b1538d[m Atualizações CSS
+[34m|[m [35m|[m [33m|[m [31m|[m [1;31m|[m [35m|[m * [33mb1559c0[m Arquivo css adicionado
+[34m|[m [35m|[m [33m|[m [31m|[m [1;31m|[m [35m|[m[35m/[m  
+[34m|[m [35m|[m [33m|[m [31m|[m [1;31m|[m * [33m078af11[m Atualização
+[34m|[m [35m|[m [33m|[m [31m|[m [1;31m|[m[1;31m/[m  
+[34m|[m [35m|[m [33m|[m [31m|[m * [33m4320978[m Arquivo da página principal alterado para index.html
+[34m|[m [35m|[m [33m|[m [31m|[m * [33ma7d645a[m Atualização no código da página principal
+[34m|[m [35m|[m [33m|[m [31m|[m[31m/[m  
+[34m|[m [35m|[m [33m|[m * [33m9dbf5c3[m Imagens adicionadas ao site
+[34m|[m [35m|[m [33m|[m * [33m5533ef4[m Imagens de doces adicionadas na pasta
+[34m|[m [35m|[m [33m|[m[33m/[m  
+[34m|[m [35m|[m * [33m463f2a1[m Imagens adicionadas da loja
+[34m|[m [35m|[m * [33m9724e5a[m Imagens adicionadas
+[34m|[m [35m|[m * [33mba4f454[m Imagens dos doces adicionadas
+[34m|[m [35m|[m[35m/[m  
+[34m|[m * [33m3d16de5[m Logo adicionada
+[34m|[m * [33m6f5eb08[m Arquivo da página home criado
+[34m|[m[34m/[m  
+* [33m5f390d0[m Telas de login criadas
+* [33madd9276[m Update README.md
+* [33m4a1ecc6[m Update README.md
+* [33m750c56b[m Arquivo em PDF adicionado
+* [33mb1b0771[m Arquivo de texto adicionado
+* [33m25be8d0[m Arquivo excluido
+* [33m12dac11[m Create README.md
+* [33m0d8c8d0[m Link do Figma adicionado
+* [33med4b3ef[m[33m ([m[1;31morigin/gabriel[m[33m)[m tudo pronto
+* [33mc773848[m[33m ([m[1;31morigin/elton[m[33m)[m Rastreamento pronto
+* [33m2858922[m rastreamento concluido
+* [33m7bf4f7a[m criado Rastreamento.html
+* [33m56b40a5[m rastreamento adicionado
+* [33m6934ab9[m Rastreamento adicionado
