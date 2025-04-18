@@ -1,101 +1,108 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Captura todos os ícones de "adicionar ao carrinho"
-    const iconesComprar = document.querySelectorAll('.icone-comprar');
+  const carrinhoContainer = document.getElementById("carrinho-container");
+  const btnFinalizar = document.getElementById("finalizar-compra");
+  const formPagamento = document.getElementById("form-pagamento");
+  const popupCompra = document.getElementById("popup-compra");
+  const btnSalvar = document.getElementById("salvar-avaliacao");
+  const btnConfirmar = document.getElementById("confirmar-pagamento");
 
-    iconesComprar.forEach(icon => {
-        icon.addEventListener('click', function () {
-            const nome = icon.getAttribute('data-nome');
-            const imagem = icon.getAttribute('data-img');
-            const preco = 15.99; // Defina um preço ou extraia do lugar certo
+  let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-            // Adiciona o produto ao carrinho
-            adicionarProdutoAoCarrinho(nome, imagem, preco);
-        });
+  // Exibir os produtos
+  function exibirCarrinho() {
+    carrinhoContainer.innerHTML = ""; // Limpa antes de exibir
+
+    carrinho.forEach((produto, index) => {
+      const item = document.createElement("div");
+      item.classList.add("item-carrinho");
+
+      item.innerHTML = `
+        <img src="${produto.imagem}" alt="${produto.nome}">
+        <div class="item-info">
+          <h4>${produto.nome}</h4>
+          <p>Preço: R$ ${produto.preco.toFixed(2)}</p>
+          <div class="item-quantidade">
+            <label for="quantidade-${index}">Qtd:</label>
+            <input type="number" id="quantidade-${index}" value="${produto.quantidade}" min="1">
+          </div>
+        </div>
+        <button class="remover" data-index="${index}">Remover</button>
+      `;
+
+      carrinhoContainer.appendChild(item);
     });
-});
 
-// Função para adicionar produto ao carrinho
-  document.addEventListener("DOMContentLoaded", function () {
-    const iconesComprar = document.querySelectorAll('.icone-comprar');
+    atualizarResumo();
+  }
 
-    iconesComprar.forEach(icon => {
-      icon.addEventListener('click', function () {
-        const nome = icon.getAttribute('data-nome');
-        const imagem = icon.getAttribute('data-img');
-        const preco = 15.99; // Valor fixo para exemplo
+  // Atualizar resumo
+  function atualizarResumo() {
+    let totalItens = 0;
+    let subtotal = 0;
 
-        salvarProdutoNoLocalStorage(nome, imagem, preco);
-
-        // Redirecionar para a página de compra
-        window.location.href = "carrinho.html";
-      });
+    carrinho.forEach(produto => {
+      totalItens += produto.quantidade;
+      subtotal += produto.preco * produto.quantidade;
     });
 
-    function salvarProdutoNoLocalStorage(nome, imagem, preco) {
-      const novoProduto = {
-        nome: nome,
-        imagem: imagem,
-        preco: preco,
-        quantidade: 1
-      };
+    document.getElementById("total-itens").textContent = totalItens;
+    document.getElementById("subtotal").textContent = subtotal.toFixed(2);
+  }
 
-      let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
-
-      const produtoExistente = carrinho.find(prod => prod.nome === nome);
-
-      if (produtoExistente) {
-        produtoExistente.quantidade += 1;
-      } else {
-        carrinho.push(novoProduto);
+  // Atualizar quantidade
+  carrinhoContainer.addEventListener("input", (e) => {
+    if (e.target.type === "number") {
+      const index = parseInt(e.target.id.split("-")[1]);
+      const novaQuantidade = parseInt(e.target.value);
+      if (novaQuantidade >= 1) {
+        carrinho[index].quantidade = novaQuantidade;
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+        atualizarResumo();
       }
-
-      localStorage.setItem("carrinho", JSON.stringify(carrinho));
     }
   });
 
+  // Remover produto
+  carrinhoContainer.addEventListener("click", (e) => {
+    if (e.target.classList.contains("remover")) {
+      const index = e.target.getAttribute("data-index");
+      carrinho.splice(index, 1);
+      localStorage.setItem("carrinho", JSON.stringify(carrinho));
+      exibirCarrinho();
+    }
+  });
 
-// Função para remover item do carrinho
-function removerItemCarrinho(button) {
-    button.parentElement.remove();
+  // Finalizar compra
+  btnFinalizar.addEventListener("click", () => {
+    window.location.href = "carrinhoUsuario.html"; // Redireciona para a página carrinho.html
+  });
+
+  // Confirmar pagamento
+  btnConfirmar.addEventListener("click", () => {
+    formPagamento.style.display = "none";
+    popupCompra.style.display = "block";
+    localStorage.removeItem("carrinho");
+    carrinho = [];
+    carrinhoContainer.innerHTML = "";
     atualizarResumo();
-}
-
-// Função para atualizar o resumo da compra
-function atualizarResumo() {
-    const carrinhoContainer = document.getElementById("carrinho-container");
-    const totalItens = carrinhoContainer.querySelectorAll(".item-carrinho").length;
-    const totalPreco = Array.from(carrinhoContainer.querySelectorAll(".item-carrinho")).reduce((total, item) => {
-        const preco = parseFloat(item.querySelector("p").textContent.replace("Preço: R$ ", ""));
-        const quantidade = item.querySelector("#quantidade").value;
-        return total + (preco * quantidade);
-    }, 0);
-  
-    document.getElementById("total-itens").textContent = totalItens;
-    document.getElementById("subtotal").textContent = totalPreco.toFixed(2);
-}
-  const btnFinalizar = document.getElementById('finalizar-compra');
-  const formPagamento = document.getElementById('form-pagamento');
-  const popupCompra = document.getElementById('popup-compra');
-  const btnConfirmar = document.getElementById('confirmar-pagamento');
-  const btnSalvar = document.getElementById('salvar-avaliacao');
-
-  // Mostrar o formulário de pagamento ao clicar no botão
-  btnFinalizar.addEventListener('click', () => {
-    formPagamento.style.display = 'block';
   });
 
-  // Mostrar pop-up de compra finalizada
-  btnConfirmar.addEventListener('click', () => {
-    formPagamento.style.display = 'none';
-    popupCompra.style.display = 'block';
+  // Salvar avaliação
+  btnSalvar.addEventListener("click", () => {
+    const texto = document.getElementById("avaliacao").value.trim();
+    if (texto) {
+      alert("Avaliação salva! Obrigado 😊");
+      console.log("Avaliação do cliente:", texto);
+    } else {
+      alert("Por favor, escreva algo na avaliação.");
+    }
   });
 
-  // Exibir avaliação no console (pode ser salvo no localStorage, se quiser)
-  btnSalvar.addEventListener('click', () => {
-    const texto = document.getElementById('avaliacao').value;
-    alert("Avaliação salva! Obrigado 😊");
-    console.log("Avaliação do cliente:", texto);
-  });
+  exibirCarrinho();
+});
+
+
+
 
 
   

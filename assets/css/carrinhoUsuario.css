@@ -9,7 +9,7 @@ html, body {
 }
 
 main {
-  flex-grow: 1; /* Garante que o main ocupa o espaço restante */
+  flex-grow: 1;
   padding: 20px;
 }
 
@@ -26,6 +26,8 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 .item-carrinho {
@@ -36,6 +38,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .item-carrinho img {
@@ -95,7 +98,6 @@ h1 {
 }
 
 /* Formulário de pagamento e pop-up de avaliação */
-#form-pagamento,
 #popup-compra {
   margin-top: 20px;
   background-color: #fce4ec;
@@ -127,7 +129,7 @@ textarea {
   margin-top: 10px;
 }
 
-/* Botão salvar avaliação */
+/* Botões */
 #salvar-avaliacao,
 #confirmar-pagamento {
   margin-top: 10px;
@@ -151,3 +153,6 @@ footer {
   text-align: center;
   color: #314048;
 }
+
+
+
