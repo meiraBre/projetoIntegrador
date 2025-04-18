@@ -13,6 +13,7 @@
 - Desenvolvimento do layout visual e navegação da loja utilizando a ferramenta [figma](https://www.figma.com/design/CFVkecz2M18hOtbKCuu3yI/Untitled?node-id=0-1&m=dev&t=RoLIskPz07d6BtGr-1)
 
 ## 🖥️Sprint 2 - Desenvolvimento das Páginas em HTML
+Criação das páginas estruturais da aplicação, com organização semântica e uso de componentes reutilizáveis.
 - Página de login: Desenvolvida por Alicia. Estrutura básica do formulário de autenticação.
 - Página principal (home): Desenvolvida por Brenda. Apresentação dos produtos em destaque e acesso às outras páginas.
 - Página de compra: Desenvolvida por Kauã. Exibição dos produtos detalhados com botão de compra.
