@@ -2,7 +2,13 @@ main h1 {
     color: white;
     text-align: center;
     margin: 10px;
+    flex: 1; 
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* garante que o body ocupe a altura toda da tela */
+  }
 .topo {
     display: flex;
     align-items: center;
@@ -111,3 +117,15 @@ section div p {
 .iconesProdutos img:hover {
     transform: scale(1.1);
 }  
+/*Footer no final da página após acionar o filtro de pesquisa*/
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1;
+}
+  
