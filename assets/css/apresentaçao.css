@@ -31,6 +31,7 @@
     line-height: 1.7;
     background-color: var(--light-color);
     overflow-x: hidden;
+    color: white;
   }
   
   h1, h2, h3, h4 {
@@ -171,10 +172,14 @@
   }
   
   /* ===== Main Content ===== */
-  .page-header {
+  .titulo {
     text-align: center;
     margin-bottom: 4rem;
+    font-family: 'Arial', sans-serif; /* ou a fonte que você quiser */
+    font-size: 2rem; /* define um tamanho fixo */
+    color: white; /* para garantir que o texto fique branco */
   }
+  
   
   .history-section, 
   .philosophy-section, 
@@ -301,32 +306,42 @@
   }
   
   .footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
-    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem; /* espaço entre as seções */
+    background-color: #222; /* cor de fundo escura para contraste */
+    padding: 2rem;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    flex-wrap: wrap; /* se for em tela menor, empilha */
   }
   
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+  }
   .footer-section h4 {
-    color: #000000;
-    margin-bottom: 1.8rem;
-    font-size: 1.3rem;
-    font-family: var(--font-secondary);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: white;
+  } 
+  .footer-section address,
+  .footer-section p,
+  .footer-section a {
+    color: white;
+    font-size: 0.95rem;
+    text-decoration: none;
   }
-  
-  .footer-section address {
-    font-style: normal;
-    line-height: 1.8;
-    color: #000000;
-  }
-  
   .social-links {
     list-style: none;
+    padding: 0;
   }
-  
   .social-links li {
-    margin-bottom: 1rem;
-  }
+    margin: 0.3rem 0;
+  }  
+  
+
   
   .social-links a {
     display: flex;
