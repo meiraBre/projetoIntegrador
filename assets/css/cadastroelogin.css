@@ -67,6 +67,29 @@ header .icones {
     margin: 20px;
 }
 
+.navMenu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #ffff;
+    margin: 5px auto;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+
 header, footer {
     position: relative;
 }
@@ -114,7 +137,6 @@ footer p {
 
 .formLogin p {
     font-size: 14px;
-    color: white;
     margin-top: 10px; /* Ajuste para melhor espaçamento */
     text-align: left; /* Centraliza o texto */
 }
@@ -128,7 +150,6 @@ footer p {
     border-radius: 4px;
     transition: all linear 160ms;
     outline: none;
-    width: 435px;
 }
   
 .formLogin input:focus {
@@ -144,8 +165,7 @@ footer p {
 #google-signin {
     padding: 15px;
     display: flex;
-    align-items: center;
-    justify-content: space-between; 
+    align-items: center; 
     gap: .5rem;
     background-color: #314048;
     color: white;
@@ -157,12 +177,16 @@ footer p {
     margin: 0 !important;
     border-radius: 4px;
 }
+
+span#google-signin{
+    display: flex;
+    justify-content: center;
+}
   
 .formLogin a {
     display: inline-block;
     margin-bottom: 20px;
     font-size: 13px;
-    color: white;
     transition: all linear 160ms;
     text-decoration: none;
 }
@@ -203,7 +227,7 @@ footer p {
     width: 100%;
     height: 60px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     position: relative;
     background-color: #d9afb5; /* Cor rosa claro */
@@ -212,4 +236,42 @@ footer p {
 .copyrightText {
     margin: 15px 0;
     color: #fff;
+}
+
+
+@media(max-width: 765px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #d9afb5;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .navMenu.active{
+        right: 0;
+    }
+    .formLogin{
+        width: 465px;
+    }
 }

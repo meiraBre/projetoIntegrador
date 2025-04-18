@@ -1,22 +1,124 @@
+.container { 
+    width: 60%; 
+    margin: auto; 
+    padding: 20px; 
+    background: #ffcccb; 
+    border-radius: 10px; 
+}
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-top: 20px; 
+    background: white; 
+    border-radius: 5px; 
+}
+th, td { 
+    border: 1px solid black; 
+    padding: 10px; 
+}
+th { 
+    background: #ff6666; 
+    color: white; 
+}
 
-body { font-family: Arial, sans-serif; background-color:  #214F50; }
-.container { width: 60%; margin: auto; padding: 20px; background: #ffcccb; border-radius: 10px; }
-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; border-radius: 5px; }
-th, td { border: 1px solid black; padding: 10px; }
-th { background: #ff6666; color: white; }
-button { margin-top: 10px; padding: 10px 15px; background: #ff6666; color: white; border: none; cursor: pointer; border-radius: 5px; }
-select { padding: 5px; margin-top: 10px; }
+select { 
+    padding: 5px; 
+    margin-top: 10px; 
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-header, footer {
-    background-color: #F3D8CF;
-    color: rgb(0, 0, 0);
-    padding: 15px;
+header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; /* Distribui os elementos */
+    background-color: #d9afb5;
+    height: 70px;
+    padding: 0 20px; 
 }
+
+/* Logo à esquerda */
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Centraliza os itens da lista */
+header .lista {
+    display: flex;
+    flex-grow: 1; /* Faz a lista ocupar o máximo de espaço possível */
+    justify-content: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 28px;
+}
+
+header ul li {
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+}
+
+header ul li a button  {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    background-color: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+header ul li a button:hover {
+    color: #314048 ;
+    transform: scale(1.05);
+}
+
+header .icones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px;
+}
+
+.navMenu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #ffff;
+    margin: 5px auto;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+header, footer {
+    position: relative;
+}
+
+
 main {
     padding: 20px;
 }
@@ -28,18 +130,11 @@ main {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #214F50;
+    background-color: #314048;
     text-align: center;
     margin: 0;
     padding: 0;
 }
-
- footer {
-    background-color: #F0D0D3;
-    color:black rgb(0, 0, 0);
-    padding: 9px;
-    font-size: 1.2em;
-    }
 
 main {
     padding: 20px;
@@ -84,28 +179,12 @@ th, td {
 }
 
 th {
-    background: #ff6666;
+    background: #A3ABA9;
     color: white;
 }
 
 tr:nth-child(even) {
     background-color: #ffe0e0;
-}
-
-button {
-    margin-top: 10px;
-    padding: 12px 20px;
-    background: #ff6666;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #d32f2f;
 }
 
 select {
@@ -116,12 +195,59 @@ select {
     font-size: 1em;
 }
 
+.footer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #d9afb5; /* Cor rosa claro */
+}
+
+.copyrightText {
+    margin: 15px 0;
+    color: #fff;
+}
 /* Responsividade */
+@media(max-width: 765px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #d9afb5;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .navMenu.active{
+        right: 0;
+    }
+}
 @media (max-width: 768px) {
     .container {
         width: 95%;
     }
-
+    
     table {
         font-size: 0.9em;
     }

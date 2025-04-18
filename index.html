@@ -5,86 +5,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/assets/img/cupcake-bakery-svgrepo-com.svg" type="image/x-icon">
     <title>Home</title>
-    <link rel="stylesheet" href="/assets/css/index.css">
-    <link rel="stylesheet" href="/assets/css/styledefault.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/styledefault.css">
+    <script src="./assets/js/menu.js" defer></script>
+    <script src="./assets/js/index.js" defer></script>
 </head>
-<header>
-    <div class="logo">
-        <img src="./assets/img/doce_encanto_logo_circular.png" alt="Logo da loja de doces" width="60px">
-    </div>
-    <div class="lista">
-        <ul>
-            <li><a href="./index.html"><button>Início</button></a></li>
-            <li><a href="./comprar.html"><button>Produtos</button></a></li>
-            <li><a href="./apresentaçao.html"><button>Sobre</button></a></li>
-        </ul>
-    </div>
-    <div class="icones">
-        <a href="Rastreamento.html">
-            <img src="./assets/img/icone-carrinho.png" alt="Carrinho" width="25px">
-        </a>
-        <a href="login.html">
-            <img src="./assets/img/icone-usuário.png" alt="Usuário" width="25px">
-        </a>
-    </div>
-</header>
 <body>
+    <header>
+        <div class="logo">
+            <img src="./assets/img/doce_encanto_logo_circular.png" alt="Logo da loja de doces" width="60px">
+        </div>
+        <div class="lista">
+            <ul class="navMenu">
+                <li><a href="./index.html"><button>Início</button></a></li>
+                <li><a href="./comprar.html"><button>Produtos</button></a></li>
+                <li><a href="./apresentaçao.html"><button>Sobre</button></a></li>
+            </ul>
+        </div>
+        <div class="icones">
+            <a href="carrinho.html">
+                <img src="./assets/img/icone-carrinho.png" alt="Carrinho" width="25px">
+            </a>
+            <a href="login.html">
+                <img src="./assets/img/icone-usuário.png" alt="Usuário" width="25px">
+            </a>
+        </div>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
     <main>
-        <h1>Bem vindo a nossa loja!</h1>
-        <p class="slogan">Doce sabor em cada detalhe! </p>
+        <div class="topo">
+            <h1>Bem vindo à nossa loja!</h1>
+            <button id="btn-lupa">
+              <img src="./assets/img/tool.png" alt="Ícone de pesquisa" width="70px">
+            </button>
+          </div>
+          
+          <div id="barra-pesquisa" class="escondido">
+            <input type="text" placeholder="Pesquise produtos para adoçar seu dia...">
+          </div>
         <section>
-            <div>
-                <img src="./assets/img/bolo-de-pote.webp" alt="" width="300px">
-                <p>Bolo de pote</p>
+            <div class="produto">
+                <img src="./assets/img/bolo-de-pote.webp" alt="Bolo de pote" width="300px">
+                <p class="nomeProduto">Bolo de pote</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Bolo de pote" data-img="./assets/img/bolo-de-pote.webp">
+                </div>
             </div>
-            <div>
-                <img src="./assets/img/pudim.jpeg" alt="" width="300px">
-                <p>Pudim</p>
+            <div class="produto">
+                <img src="./assets/img/pudim.jpeg" alt="Pudim" width="300px">
+                <p class="nomeProduto">Pudim</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Pudim" data-img="./assets/img/pudim.jpeg">
+                </div>
             </div>
-            <div>
-                <img src="./assets/img/cone-trufado.jpeg" alt="" width="300px">
-                <p>Trufa</p>
+            <div class="produto">
+                <img src="./assets/img/cone-trufado.jpeg" alt="Trufa" width="300px">
+                <p class="nomeProduto">Trufa</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Trufa" data-img="./assets/img/cone-trufado.jpeg">
+                </div>
             </div>
-            <div>
-                <img src="./assets/img/brigadeiro.webp" alt="" width="300px">
-                <p>Brigadeiro</p>
+            <div class="produto">
+                <img src="./assets/img/brigadeiro.webp" alt="Brigadeiro" width="300px">
+                <p class="nomeProduto">Brigadeiro</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Brigadeiro" data-img="./assets/img/brigadeiro.webp">
+                </div>
             </div>
-            <div>
-                <img src="./assets/img/brownie.png" alt="" width="300px">
-                <p>Brownie</p>
+            <div class="produto">
+                <img src="./assets/img/brownie.png" alt="Brownie" width="300px">
+                <p class="nomeProduto">Brownie</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Brownie" data-img="./assets/img/brownie.png">
+                </div>
             </div>
-            <div>
-                <img src="./assets/img/donnuts.jpeg" alt="" width="300px">
-                <p>Donnuts</p>
+            <div class="produto">
+                <img src="./assets/img/donnuts.jpeg" alt="Donnuts" width="300px">
+                <p class="nomeProduto">Donnuts</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Donnuts" data-img="./assets/img/donnuts.jpeg">
+                </div>
             </div>
-            <div>
-                <img src="./assets/img/cupcake.webp" alt="" width="300px">
-                <p>Cupcake</p>
+            <div class="produto">
+                <img src="./assets/img/cupcake.webp" alt="Cupcake" width="300px">
+                <p class="nomeProduto">Cupcake</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Cupcake" data-img="./assets/img/cupcake.webp">
+                </div>
             </div>
-            <div>
-                <img src="./assets/img/palito-trufado.jpeg" alt="" width="300px">
-                <p>Palito trufado</p>
+            <div class="produto">
+                <img src="./assets/img/palito-trufado.jpeg" alt="Palito trufado" width="300px">
+                <p class="nomeProduto">Palito trufado</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Palito trufado" data-img="./assets/img/palito-trufado.jpeg">
+                </div>
             </div>
-            <div>
-                <img src="./assets/img/sorvete.webp" alt="" width="300px">
-                <p>Sorvete</p>
+            <div class="produto">
+                <img src="./assets/img/sorvete.webp" alt="Sorvete" width="300px">
+                <p class="nomeProduto">Sorvete</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Sorvete" data-img="./assets/img/sorvete.webp">
+                </div>
             </div>
-            <div>
-                <img src="./assets/img/alfajor.webp" alt="" width="300px">
-                <p>Alfajor</p>
+            <div class="produto">
+                <img src="./assets/img/alfajor.webp" alt="Alfajor" width="300px">
+                <p class="nomeProduto">Alfajor</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Alfajor" data-img="./assets/img/alfajor.webp">
+                </div>
             </div>
-            <div>
-                <img src="./assets/img/bolo-de-fubá.webp" alt="" width="300px">
-                <p>Bolo de fubá</p>
+            <div class="produto">
+                <img src="./assets/img/bolo-de-fubá.webp" alt="Bolo de fubá" width="300px">
+                <p class="nomeProduto">Bolo de fubá</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Bolo de fubá" data-img="./assets/img/bolo-de-fubá.webp">
+                </div>
             </div>
-            <div>
-                <img src="./assets/img/torta-maracuja.webp" alt="" width="300px">
-                <p>Torta de maracujá</p>
+            <div class="produto">
+                <img src="./assets/img/torta-maracuja.webp" alt="Torta de maracujá" width="300px">
+                <p class="nomeProduto">Torta de maracujá</p>
+                <div class="iconesProdutos">
+                    <img src="./assets/img/love.png" alt="Icone de favoritar">
+                    <img class="icone-comprar" src="./assets/img/circle.png" alt="Adicionar ao carrinho" data-nome="Torta de maracujá" data-img="./assets/img/torta-maracuja.webp">
+                </div>
             </div>
         </section>
     </main>
-</body>
-<footer>
-    <p>&copy; 2025 - Doce Encanto</p>
-</footer>
+    <footer class="footer">
+        <p class="copyrightText">&copy; 2025 Doce Encanto. Todos os direitos reservados.</p>
+    </footer>
+    </body>
 </html>

@@ -3,42 +3,111 @@ main h1 {
     text-align: center;
     margin: 10px;
 }
-
-.slogan {
+.topo {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    margin-top: 10px;
     text-align: center;
-    color: #d9afb5;
-    font-size: 20px;
+}
+.topo h1 {
+    width: 100%;
     margin: 10px;
 }
-
+#btn-lupa {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#barra-pesquisa {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin: 15px;
+}
+#barra-pesquisa.escondido {
+    display: none;
+}
+#barra-pesquisa input {
+    width: 60%;
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
 section {
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo */
-    justify-content: center; /* Centraliza o conteúdo */
-    gap: 10px; /* Espaço entre as colunas */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
 }
-
 section div {
     display: flex;
-    flex-direction: column; /* As imagens dentro de cada div ficam em coluna */
+    flex-direction: column;
     align-items: center;
-    text-align: center; /* Centraliza os textos */
+    text-align: center;
 }
-
 section div img {
     margin-bottom: 10px;
     border-radius: 10px;
 }
-
 section div p {
     margin: 6px;
     color: white;
-    background-color:  #d9afb5;
+    background-color: #d9afb5;
     padding: 5px 20px;
     text-align: center;
     border-radius: 2px;
     max-width: 300px;
 }
+/* Produto e nome */
+.produto {
+    position: relative;
+    display: inline-block;
+}
+.produto img {
+    display: block;
+    width: 300px;
+    border-radius: 10px;
+}
+.nomeProduto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 8px 0;
+    background-color: #d9afb5;
+    color: white;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.produto:hover .nomeProduto {
+    opacity: 1;
+}
+/* Ícones dos produtos */
+.iconesProdutos {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 1;
+}
+.iconesProdutos img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.iconesProdutos img:hover {
+    transform: scale(1.1);
+}  
