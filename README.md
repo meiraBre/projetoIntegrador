@@ -41,3 +41,7 @@ Criação do Banco de Dados, incluindo o desenvolvimento de um diagrama DER (Dia
 - Criação da modelagem do banco de dados utilizando o Diagrama de Entidade-Relacionamento onde serão definidas as entidades e os relacionamentos entre elas.
 - Implementação do banco de dados físico utilizando um sistema de gerenciamento de banco de dados (SGBD) como SQLOnline IDE.
 - Criação das tabelas no modelo do DER e na 3FN, incluindo a definição dos tipos de dados e restrições de integridade, como chave primárias e estrnageiras.
+
+## Diagrama
+
+![alt text](image-1.png)
