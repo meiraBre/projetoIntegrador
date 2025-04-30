@@ -5,49 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doce Encanto - Nossa História</title>
     <meta name="description" content="Conheça a história da Doce Encanto, sua loja de doces gourmet com uma pitada de modernidade desde 1999.">
-    <link rel="stylesheet" href="./assets/css/apresentaçao.css"> 
-    <link rel="stylesheet" href="./assets/css/styledefault.css">
+    <link rel="stylesheet" href="./assets/css/apresentaçao.css"> <!-- Added proper CSS link -->
     <script src="/assets/js/global.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./assets/img/doce_encanto_logo_circular.png" alt="Logo da loja de doces" width="60px">
+    <header class="main-header">
+        <div class="header-content">
+            <h1 aria-label="Doce Encanto">Doce Encanto</h1>
+            <p class="tagline">Sua loja de doces com uma pitada de modernidade!</p>
         </div>
-        <div class="lista">
-            <ul class="navMenu">
-                <li><a href="./index.html"><button>Início</button></a></li>
-                <li><a href="./comprar.html"><button>Produtos</button></a></li>
-                <li><a href="./apresentaçao.html"><button>Sobre</button></a></li>
+        
+        <nav aria-label="Navegação principal">
+            <ul class="nav-menu">
+                <li><a href="login.html">login</a></li>
+                <li><a href="cadastro.html" aria-current="page">Cadastro</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="apresentaçao.html">História da loja</a></li>
             </ul>
-        </div>
-        <div class="icones">
-            <a href="Rastreamento.html">
-                <img src="./assets/img/icone-carrinho.png" alt="Carrinho" width="25px">
-            </a>
-            <a href="login.html">
-                <img src="./assets/img/icone-usuário.png" alt="Usuário" width="25px">
-            </a>
-        </div>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
+        </nav>
     </header>
+
     <main class="container">
         <article>
-            <header class="titulo">
+            <header class="page-header">
                 <h2>Nossa História</h2>
+                <p class="subtitle">Doce tradição desde 1999</p>
             </header>
             
             <section class="history-section">
                 <p>
-                    A <span class="highlight">Doce Encanto</span> nasceu em 1999, em meio a uma era de transformações digitais e novas tendências gastronômicas. Fundada por um grupo de amigos apaixonados por doces, <span class="highlight">Brenda</span>, <span class="highlight">Alice</span>, <span class="highlight">Leonardo</span>, <span class="highlight">Kauã</span> e <span class="highlight">Elton</span>, a loja surgiu com o objetivo de reinventar os sabores tradicionais, trazendo inovação e sofisticação para o mundo dos doces.
+                    A <span class="highlight">Doce Encanto</span> nasceu em 1999, em meio a uma era de transformações digitais e novas tendências gastronômicas. Fundada por um grupo de amigos apaixonados por doces, <span class="highlight">Brenda</span>, <span class="highlight">Alice</span>, <span class="highlight">Leonardo</span>, <span class="highlight">Kaue</span> e <span class="highlight">Elton</span>, a loja surgiu com o objetivo de reinventar os sabores tradicionais, trazendo inovação e sofisticação para o mundo dos doces.
                 </p>
                 
                 <figure class="founders-photo">
                     <img src="./assets/img/logo-lojaDoce.webp" alt="Logo Loja" loading="lazy">
+                    <figcaption>Logo da loja Doce Encanto</figcaption>
                 </figure>
             </section>
 
@@ -94,6 +86,7 @@
         </article>
     </main>
 
+    <footer class="main-footer">
         <div class="footer-content">
             <div class="footer-section">
                 <h4>Doce Encanto</h4>
@@ -123,8 +116,10 @@
                 </ul>
             </div>
         </div>
-        <footer class="footer">
-            <p class="copyrightText">&copy; 2025 Doce Encanto. Todos os direitos reservados.</p>
-        </footer>
+        
+        <div class="copyright">
+            <p>&copy; 2025 Doce Encanto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
