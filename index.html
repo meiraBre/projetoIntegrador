@@ -144,6 +144,30 @@
                 </div>
             </div>
         </section>
+
+        <!-- Modal de compra -->
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="produto-nome-modal"></h2>
+      <img id="produto-img-modal" src="" alt="" width="100%">
+      <p>Preço unitário: R$ <span id="preco-unitario">5.00</span></p>
+      <div class="quantidade">
+        <button id="diminuir">-</button>
+        <span id="quantidade">1</span>
+        <button id="aumentar">+</button>
+      </div>
+      <p>Total: R$ <span id="total">5.00</span></p>
+      <label for="pagamento">Forma de pagamento:</label>
+      <select id="pagamento">
+        <option value="pix">PIX</option>
+        <option value="cartao">Cartão</option>
+        <option value="boleto">Boleto</option>
+      </select>
+      <br><br>
+      <button id="fechar-modal">Fechar</button>
+    </div>
+  </div>
+  
     </main>
     <footer class="footer">
         <p class="copyrightText">&copy; 2025 Doce Encanto. Todos os direitos reservados.</p>

@@ -128,4 +128,64 @@ body {
 main {
     flex: 1;
 }
+/* === Modal de Adição ao Carrinho === */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  .modal.hidden {
+    display: none;
+  }
+  .modal-content {
+    background:#a3aba9;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.3s ease;
+  }
+  .modal-content img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .quantidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  .quantidade button {
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #314048;
+    border: none;
+    color: white;
+  }
+  #fechar-modal {
+    margin-top: 15px;
+    background-color: #314048;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
   
