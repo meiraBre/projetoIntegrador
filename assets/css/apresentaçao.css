@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ===== Base Styles ===== */
 :root {
 --primary-color: #d9afb5; 
@@ -412,4 +413,196 @@ animation: fadeIn 0.8s ease-out forwards;
 
 .founders-photo img {
 animation: float 4s ease-in-out infinite;
+=======
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #314048;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d9afb5;
+  height: 70px;
+  padding: 0 20px;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .lista {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  font-size: 28px;
+}
+
+header ul li {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  padding: 10px 15px;
+}
+
+header ul li a button {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  background: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  border: none; /* Adicionado */
+  outline: none; /* Adicionado */
+}
+
+header ul li a button:hover {
+  color: #314048;
+  transform: scale(1.05);
+}
+
+/* Adicionado para acessibilidade */
+header ul li a button:focus {
+  outline: 2px solid rgba(217, 175, 181, 0.5);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+header .icones {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+header, footer {
+  position: relative;
+}
+
+footer {
+  background-color: #d9afb5;
+  height: 35px;
+  margin-top: 20px;
+  color: black;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.footer {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  background-color: #d9afb5;
+}
+
+.copyrightText {
+  margin: 15px 0;
+  color: #fff;
+}
+
+/* NOVO: Estilo da seção principal */
+.main-section {
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+}
+
+.main-section p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+/* NOVO: Botão principal */
+.btn {
+  background-color: #314048;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  transition: all linear 160ms;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  outline: none; /* Adicionado */
+}
+
+.btn:hover {
+  transform: scale(1.02);
+  background-color: #263339;
+}
+
+/* Adicionado para acessibilidade */
+.btn:focus {
+  outline: 2px solid rgba(49, 64, 72, 0.5);
+  outline-offset: 2px;
+}
+
+/* NOVO: Carrossel */
+.carrossel-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 40px 0;
+}
+
+.carrossel {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.card-produto {
+  background-color: #A3ABA9;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.card-produto:hover {
+  transform: scale(1.05);
+}
+
+.card-produto img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+>>>>>>> origin/main
 }
