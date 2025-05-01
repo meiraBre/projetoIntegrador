@@ -5,38 +5,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Doce Encanto - Sobre Nós</title>
   <link rel="stylesheet" href="./assets/css/apresentaçao.css"> <!-- Added proper CSS link -->
+
   <!-- Adicione o Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
   <script src="/assets/js/global.js" defer></script>
   <script src="./assets/js/Carrinho.js"defer></script>
+   <link rel="stylesheet" href="./assets/css/styledefault.css">
+  <script src="./assets/js/global.js" defer></script>
+  <script src="./assets/js/menu.js" defer></script>
 
 </head>
 <body>
 
   <header>
     <div class="logo">
-        <img src="./assets/img/doce_encanto_logo_circular.png" alt="Logo da Doce Encanto" class="logo-img">
-      </div>
-      
-    <nav class="lista">
-      <ul>
-        <li><a href="./index.html"><button>Início</button></a></li>
-        <li><a href="./comprar.html"><button>Produtos</button></a></li>
-        <li><a href="./apresentaçao.html"><button>Sobre</button></a></li>
-
-      </ul>
-    </nav>
+        <img src="./assets/img/doce_encanto_logo_circular.png" alt="Logo da loja de doces" width="60px">
+    </div>
+    <div class="lista">
+        <ul class="navMenu">
+            <li><a href="./index.html"><button>Início</button></a></li>
+            <li><a href="./comprar.html"><button>Produtos</button></a></li>
+            <li><a href="./apresentaçao.html"><button>Sobre</button></a></li>
+        </ul>
+    </div>
     <div class="icones">
-      <!-- Ícones do Font Awesome em branco -->
-      <i class="fas fa-shopping-cart" style="color: white;"></i>
-      <i class="fas fa-user" style="color: white;"></i>
+        <a href="carrinho.html">
+            <img src="./assets/img/icone-carrinho.png" alt="Carrinho" width="25px">
+        </a>
+        <a href="login.html">
+            <img src="./assets/img/icone-usuário.png" alt="Usuário" width="25px">
+        </a>
+    </div>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
     </div>
   </header>
 
   <main class="main-section">
     <h1>Bem-vindo à Doce Encanto</h1>
     <p>Uma loja feita por quem vive de Gostosuras e Travessuras. Desde o começo, nossa missão foi oferecer produtos modernos, acessíveis e cheios de personalidade. E aqui estamos nós!</p>
-    <a href="#"><button class="btn">Conheça nossos produtos</button></a>
+    <a href="./comprar.html"><button class="btn">Conheça nossos produtos</button></a>
   </main>
 
   <section class="carrossel-container">
@@ -49,28 +60,58 @@
       <div class="card-produto">
         <img src="./assets/img/bolo-de-fubá.webp" alt="Produto 2">
         <h3>Bolo de Fubá</h3>
-        <p>R$ 12,00</p>
+        <p>R$ 9,99</p>
       </div>
       <div class="card-produto">
         <img src="./assets/img/Brigadeiro.webp" alt="Produto 3">
         <h3>Brigadeiro</h3>
-        <p>R$ 8,00</p>
+        <p>R$ 2,50</p>
       </div>
       <div class="card-produto">
         <img src="./assets/img/cone-trufado.jpeg" alt="Produto 4">
-        <h3>Cone Trufado</h3>
-        <p>R$ 12,00</p>
+        <h3>Trufa</h3>
+        <p>R$ 7,99</p>
+      </div>
+      <div class="card-produto">
+        <img src="./assets/img/palito-trufado.jpeg" alt="Produto 5">
+        <h3>Palito Trufado</h3>
+        <p>R$ 18,90</p>
+      </div>
+      <div class="card-produto">
+        <img src="./assets/img/Pudim.jpeg" alt="Produto 6">
+        <h3>Pudim</h3>
+        <p>R$ 24,90</p>
+      </div>
+      <div class="card-produto">
+        <img src="./assets/img/sorvete.webp" alt="Produto 7">
+        <h3>Sorvete</h3>
+        <p>R$ 15,00</p>
+      </div>
+      <div class="card-produto">
+        <img src="./assets/img/bolo-de-pote.webp" alt="Produto 8">
+        <h3>Bolo de Pote de Prestígio</h3>
+        <p>R$ 14,99</p>
+      </div>
+      <div class="card-produto">
+        <img src="./assets/img/Brownie.png" alt="Produto 9">
+        <h3>Brownie</h3>
+        <p>R$ 6,50</p>
+      </div>
+      <div class="card-produto">
+        <img src="./assets/img/Cupcake.webp" alt="Produto 9">
+        <h3>Cupcake</h3>
+        <p>R$ 4,99</p>
       </div>
       <!-- duplicados para efeito infinito -->
       <div class="card-produto">
-        <img src="./assets/img/torta-maracuja.webp" alt="Produto 5">
+        <img src="./assets/img/torta-maracuja.webp" alt="Produto 10">
         <h3>Torta de Maracuja</h3>
         <p>R$ 18,00</p>
       </div>
       <div class="card-produto">
-        <img src="./assets/img/donnuts.jpeg" alt="Produto 6">
+        <img src="./assets/img/donnuts.jpeg" alt="Produto 11">
         <h3>Donnuts</h3>
-        <p>R$ 5,00</p>
+        <p>R$ 5,50</p>
       </div>
     </div>
   </section>
