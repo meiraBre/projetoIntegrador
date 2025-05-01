@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="./assets/css/styledefault.css">
     <script src="./assets/js/menu.js" defer></script>
-    <script src="./assets/js/index.js" defer></script>
 </head>
 <body>
     <header>
@@ -23,7 +22,7 @@
             </ul>
         </div>
         <div class="icones">
-            <a href="carrinho.html">
+            <a href="Rastreamento.html">
                 <img src="./assets/img/icone-carrinho.png" alt="Carrinho" width="25px">
             </a>
             <a href="login.html">
@@ -45,7 +44,7 @@
           </div>
           
           <div id="barra-pesquisa" class="escondido">
-            <input type="text" placeholder="Pesquise produtos para adoçar seu dia...">
+            <input id="pesquisa" type="text" placeholder="Pesquise produtos para adoçar seu dia...">
           </div>
         <section>
             <div class="produto">
@@ -145,9 +144,34 @@
                 </div>
             </div>
         </section>
+
+        <!-- Modal de compra -->
+<div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="produto-nome-modal"></h2>
+      <img id="produto-img-modal" src="" alt="" width="100%">
+      <p>Preço unitário: R$ <span id="preco-unitario">5.00</span></p>
+      <div class="quantidade">
+        <button id="diminuir">-</button>
+        <span id="quantidade">1</span>
+        <button id="aumentar">+</button>
+      </div>
+      <p>Total: R$ <span id="total">5.00</span></p>
+      <label for="pagamento">Forma de pagamento:</label>
+      <select id="pagamento">
+        <option value="pix">PIX</option>
+        <option value="cartao">Cartão</option>
+        <option value="boleto">Boleto</option>
+      </select>
+      <br><br>
+      <button id="fechar-modal">Fechar</button>
+    </div>
+  </div>
+  
     </main>
     <footer class="footer">
         <p class="copyrightText">&copy; 2025 Doce Encanto. Todos os direitos reservados.</p>
     </footer>
     </body>
+    <script src="./assets/js/index.js" defer></script>
 </html>
